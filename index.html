@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
+        <h1>YellowGreen</h1>
         <nav>
-            <ul>
+            <ul class="ulheader">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Galery</li>
@@ -18,9 +19,67 @@
 
         </nav>
     </header>
+
+    <!--SECTION SLIDESHOW OUR VALUES /// MARGAUX-->
+    <section id="our-values">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+             </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+  
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+    </section>
+
+    <section id="what-we-do"></section>
+    <section id="formulaire"></section>
     
     <section id="our-values"></section>
-    <section id="what-we-do"></section>
+
+    <section id="what-we-do">
+        <h2>What we do</h2>
+        <ul class="wwd-container">
+            <li class="wwd-item">
+                <h3 class="wwd-title">Web</h3>
+                <img src="" alt="">
+                <article></article></li>
+            <li class="wwd-item">
+                <h3 class="wwd-title">Print</h3>
+                <img src="" alt="">
+                <article></article></li>
+            <li class="wwd-item">
+                <h3 class="wwd-title">Marking campaigns</h3>
+                <img src="" alt="">
+                <article></article></li>
+        </ul>
+    </section>
 
     <!-- Formulaire RoxaneDrelon -->
 
@@ -28,9 +87,9 @@
         <h2>Feel free to contact us !</h2>
         <!-- h2 en dehors du form -->
         <form>
-            <input class="mail_and_phone" type="email" placeholder="@">
-            <input class="mail_and_phone" type="phone" placeholder="ex: 03 12 34 56 78">
-            <select id="category" name="category">
+            <label>Your Email:</label><input class="mail_and_phone" type="email" placeholder="@">
+            <label>Your phone:</label><input class="mail_and_phone" type="phone" placeholder="ex: 03 12 34 56 78">
+            <label>Choose a topic:</label><select id="category" name="category">
                 <option value="quote">I need a quote:</option>
                 <option value="questions">I have questions concerning your values:</option>
                 <option value="questions">I have questions concerning your delays:</option>
