@@ -18,11 +18,7 @@ body {
 }
 
 /* =============
-<<<<<<< HEAD
 //   SLIDESHOW    //
-=======
-//  SLIDESHOW   //
->>>>>>> cec9bcf0879b66b89b9b628cc194e27c43522056
 ================ */
 
 /* Slideshow container */
@@ -137,10 +133,11 @@ body {
 .aboutus{
   position: relative;
   display:flex;
+  align-content: stretch;
 }
 
 .aboutus iframe{
-  flex-grow: 4;
+  flex-grow: 6;
   padding:1vw;
 }
 
@@ -148,15 +145,14 @@ body {
   flex-grow: 3;
   margin:1vw;
 }
-.button {
+.buttonteam {
   display:flex;
   justify-content: center;
 }
 .team {
-  background-color: #BDBDBD;
   padding:10px;
   border-radius: 5px;
-  margin: 2vw;
+  margin: 5vw;
 
 }
 
