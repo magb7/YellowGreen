@@ -6,11 +6,11 @@
 
 html, 
 body {
-  height: 100%;
-  font-family: 'Oswald', sans-serif;
+    height: 100%;
 }
 
-h1, h2 {
+
+h1, h2, h3 {
 font-family: 'Pacifico', cursive;
 }
 /* =============
@@ -53,43 +53,189 @@ header {
 /* =============
 //   SLIDESHOW    //
 ================ */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+#our-values {
+  margin-bottom: 3rem;
+}
+
+#our-values h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
+
 .slideshow-container{
   display: flex;
   justify-content: space-around;
 }
 
-.image {
+.mySlides {
   height: 250px;
   width: 30%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Caption text */
-.text {
+.mySlides h3 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  top: 0;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mySlides p {
+  padding: 0.6rem 0.6rem;
+}
+
+.img1 {
+  background-image: url('Images/slideshow1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img2 {
+  background-image: url('Images/slideshow2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img3 {
+  background-image: url('Images/slideshow3.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 
 
 /* =============
 //   WHAT WE DO  //
 ================ */
+.wwd-container{
+  display: flex;
+}
+.wwd-item{
+  text-align: center;
+  margin: 10px auto;
+}
 
 
 /* =============
 //     FORM     //
 ================ */
+#formulaire {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: dotted yellowgreen;
+  background-color: #3FA663;
+}
 
+#formulaire > h2 {
+  margin: 1vw;
+}
+
+#formulaire > form {
+  display: flex;
+  flex-direction: column;
+  /*text-align: center;*/
+  width: 75vw;
+  margin: 1vw auto;
+}
+
+#formulaire > form > textarea {
+  height: 10vw;
+}
+
+#formulaire p {
+  text-align: center;
+  margin: 1vw 0;
+}
 
 /* =============
 //   ABOUT US    //
 ================ */
+
 .aboutus{
   position: relative;
   display:flex;
@@ -105,6 +251,14 @@ header {
   flex-grow: 3;
   margin:1vw;
 }
+.aboutbox h4, p {
+  margin:.8vw;
+}
+
+.aboutbox h4{
+  font-size: large;
+}
+
 .buttonteam {
   display:flex;
   justify-content: center;
@@ -113,6 +267,8 @@ header {
   padding:10px;
   border-radius: 5px;
   margin: 5vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 
 }
 
