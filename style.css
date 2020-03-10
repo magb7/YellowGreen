@@ -234,13 +234,15 @@ footer ul>li>ul>li {
 
 .footer {
   height: auto ;
+  background-image: url("Img/footer.jpg");
 }
 
 .footer>ul {
-  background-image: linear-gradient(to top, #3391a6, #78a9c3, #aec3da, #dbdfec, #ffffff);
   flex: 1;
-  padding: 5% 0;
+  padding: 5% 0;i
 }
+
+
 
 .footer,
 .footer ul,
