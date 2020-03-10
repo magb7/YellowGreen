@@ -101,11 +101,7 @@ font-family: 'Pacifico', cursive;
 footer ul>li>ul>li {
     list-style: none;
     padding: 1em;
-
 }
-
-
-
 
 .footer {
   height: auto ;
@@ -115,7 +111,6 @@ footer ul>li>ul>li {
   background-image: linear-gradient(to top, #3391a6, #78a9c3, #aec3da, #dbdfec, #ffffff);
   flex: 1;
   padding: 5% 0;
-
 }
 
 .footer,
@@ -129,8 +124,8 @@ footer ul>li>ul>li {
 .footer ul li ul {
     flex-direction: column;
     align-items: center;
-
 }
+
 .footer ul>li>ul>li:hover { 
   filter: brightness(50%);
   opacity: 0.4;
