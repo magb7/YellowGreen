@@ -133,6 +133,7 @@ font-family: 'Pacifico', cursive;
 /* =============
 //   ABOUT US    //
 ================ */
+
 .aboutus{
   position: relative;
   display:flex;
@@ -148,6 +149,14 @@ font-family: 'Pacifico', cursive;
   flex-grow: 3;
   margin:1vw;
 }
+.aboutbox h4, p {
+  margin:.8vw;
+}
+
+.aboutbox h4{
+  font-size: large;
+}
+
 .buttonteam {
   display:flex;
   justify-content: center;
@@ -156,6 +165,8 @@ font-family: 'Pacifico', cursive;
   padding:10px;
   border-radius: 5px;
   margin: 5vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 
 }
 
