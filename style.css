@@ -16,8 +16,34 @@ font-family: 'Pacifico', cursive;
 /* =============
 //  HEADER/NAV  //
 ================ */
+
+header {
+  height: 350px;
+  background-image: url("Images/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.titreh1 {
+  text-align: center;
+  height: 250px;
+  justify-content: center;
+  font-size: 80px;
+}
+
+.spanY {
+  color: yellowgreen;
+}
+
+nav {
+  display: inline;
+  position: fixed;
+}
+
 .ulheader {
     list-style-type: none;
+    align-items: center;
 }
 
 /* =============
