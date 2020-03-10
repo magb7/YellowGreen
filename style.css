@@ -67,6 +67,16 @@ font-family: 'Pacifico', cursive;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 75vw;
+}
+
+#formulaire > form > textarea {
+  height: 10vw;
+}
+
+#formulaire p {
+  text-align: center;
+  margin: 1vw 0;
 }
 
 /* =============
