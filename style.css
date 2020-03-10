@@ -6,10 +6,13 @@
 
 html, 
 body {
-    height: 100%;
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
-
+h1, h2 {
+font-family: 'Pacifico', cursive;
+}
 /* =============
 //  HEADER/NAV  //
 ================ */
