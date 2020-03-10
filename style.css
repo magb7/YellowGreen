@@ -55,7 +55,35 @@ font-family: 'Pacifico', cursive;
 /* =============
 //     FORM     //
 ================ */
+#formulaire {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: dotted yellowgreen;
+  background-color: #3FA663;
+}
 
+#formulaire > h2 {
+  margin: 1vw;
+}
+
+#formulaire > form {
+  display: flex;
+  flex-direction: column;
+  /*text-align: center;*/
+  width: 75vw;
+  margin: 1vw auto;
+}
+
+#formulaire > form > textarea {
+  height: 10vw;
+}
+
+#formulaire p {
+  text-align: center;
+  margin: 1vw 0;
+}
 
 /* =============
 //   ABOUT US    //
