@@ -55,7 +55,19 @@ font-family: 'Pacifico', cursive;
 /* =============
 //     FORM     //
 ================ */
+#formulaire {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 1vw;
+  border: dotted yellowgreen;
+}
 
+#formulaire > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 /* =============
 //   ABOUT US    //
