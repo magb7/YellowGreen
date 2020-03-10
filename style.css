@@ -4,6 +4,10 @@
 ============== */
 * {box-sizing:border-box}
 
+html, 
+body {
+    height: 100%;
+}
 
 
 /* =============
@@ -14,9 +18,12 @@
 }
 
 /* =============
+<<<<<<< HEAD
 //   SLIDESHOW    //
+=======
+//  SLIDESHOW   //
+>>>>>>> cec9bcf0879b66b89b9b628cc194e27c43522056
 ================ */
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -127,8 +134,64 @@
 /* =============
 //   ABOUT US    //
 ================ */
+.aboutus{
+  position: relative;
+  display:flex;
+}
+
+.aboutus iframe{
+  flex-grow: 4;
+  padding:1vw;
+}
+
+.aboutbox {
+  flex-grow: 3;
+  margin:1vw;
+}
+.button {
+  display:flex;
+  justify-content: center;
+}
+.team {
+  background-color: #BDBDBD;
+  padding:10px;
+  border-radius: 5px;
+  margin: 2vw;
+
+}
 
 
 /* =============
 //   FOOTER      //
 ================ */
+
+
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+.footer ul,
+.footer ul li ul 
+ {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.footer ul li ul {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width: 960px) { 
+
+footer ul {
+        flex-direction: column;   
+    }
+    
+
+        
+}
