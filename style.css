@@ -9,8 +9,13 @@ body {
   height: 100%;
   font-family: 'Oswald', sans-serif;
 }
+a { 
+  color: inherit;
+  text-decoration: none;
 
-h1, h2 {
+}
+
+h1, h2, footer li {
 font-family: 'Pacifico', cursive;
 }
 /* =============
@@ -93,11 +98,26 @@ font-family: 'Pacifico', cursive;
 
 
 
-li {
+footer li {
     list-style: none;
     margin: 5px;
 }
 
+
+
+
+.footer {
+  height: auto ;
+}
+
+.footer>ul {
+  background-image: linear-gradient(to top, #3391a6, #78a9c3, #aec3da, #dbdfec, #ffffff);
+  flex: 1;
+  padding: 5% 0;
+
+}
+
+.footer,
 .footer ul,
 .footer ul li ul 
  {
@@ -110,7 +130,11 @@ li {
     align-items: center;
 
 }
-
+.footer ul>li>ul>li:hover { 
+  filter: brightness(50%);
+  opacity: 0.4;
+  padding: 0.1em;
+}
 
 
 
@@ -127,7 +151,8 @@ li {
 @media screen and (max-width: 960px) { 
 
 footer ul {
-        flex-direction: column;   
+        flex-direction: column;
+        
     }
     
 
