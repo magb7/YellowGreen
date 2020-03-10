@@ -130,6 +130,31 @@ body {
 /* =============
 //   ABOUT US    //
 ================ */
+.aboutus{
+  position: relative;
+  display:flex;
+}
+
+.aboutus iframe{
+  flex-grow: 4;
+  padding:1vw;
+}
+
+.aboutbox {
+  flex-grow: 3;
+  margin:1vw;
+}
+.button {
+  display:flex;
+  justify-content: center;
+}
+.team {
+  background-color: #BDBDBD;
+  padding:10px;
+  border-radius: 5px;
+  margin: 2vw;
+
+}
 
 
 /* =============
