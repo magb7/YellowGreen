@@ -23,6 +23,7 @@ header {
   background-size: cover;
   background-position: center center;
   color: white;
+  opacity: 55%;
 }
 
 .titreh1 {
@@ -34,16 +35,19 @@ header {
 
 .spanY {
   color: yellowgreen;
-}
-
-nav {
-  display: inline;
-  position: fixed;
+  font-size: 170px;
 }
 
 .ulheader {
-    list-style-type: none;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 45px;
+}
+
+.liheader {
+  padding: 30px;
 }
 
 /* =============
