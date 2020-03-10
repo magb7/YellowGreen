@@ -209,7 +209,7 @@ header {
 ================ */
 
 
-.footer ul>li>ul>li {
+footer ul>li>ul>li {
   list-style: none;
   padding: 1em;
 }
@@ -245,3 +245,9 @@ footer ul {
       flex-direction: column;
   }
 }
+
+
+
+
+
+
