@@ -10,7 +10,7 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
 font-family: 'Pacifico', cursive;
 }
 /* =============
@@ -23,28 +23,57 @@ font-family: 'Pacifico', cursive;
 /* =============
 //   SLIDESHOW    //
 ================ */
+#our-values {
+  margin-bottom: 3rem;
+}
+
+#our-values h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
+
 .slideshow-container{
   display: flex;
   justify-content: space-around;
 }
 
-.image {
+.mySlides {
   height: 250px;
   width: 30%;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.mySlides h3 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
 
+.mySlides p {
+  padding: 0.6rem 0.6rem;
+}
+
+.img1 {
+  background-image: url('Images/slideshow1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img2 {
+  background-image: url('Images/slideshow2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img3 {
+  background-image: url('Images/slideshow3.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 
 
 /* =============
@@ -100,6 +129,7 @@ font-family: 'Pacifico', cursive;
 /* =============
 //   ABOUT US    //
 ================ */
+
 .aboutus{
   position: relative;
   display:flex;
@@ -115,6 +145,14 @@ font-family: 'Pacifico', cursive;
   flex-grow: 3;
   margin:1vw;
 }
+.aboutbox h4, p {
+  margin:.8vw;
+}
+
+.aboutbox h4{
+  font-size: large;
+}
+
 .buttonteam {
   display:flex;
   justify-content: center;
@@ -123,6 +161,8 @@ font-family: 'Pacifico', cursive;
   padding:10px;
   border-radius: 5px;
   margin: 5vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 
 }
 
