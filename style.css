@@ -58,16 +58,22 @@ font-family: 'Pacifico', cursive;
 #formulaire {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin: 0 1vw;
+  flex-flow: column wrap;
+  justify-content: center;
   border: dotted yellowgreen;
+  background-color: #3FA663;
+}
+
+#formulaire > h2 {
+  margin: 1vw;
 }
 
 #formulaire > form {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /*text-align: center;*/
   width: 75vw;
+  margin: 1vw;
 }
 
 #formulaire > form > textarea {
