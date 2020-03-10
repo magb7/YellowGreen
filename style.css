@@ -73,7 +73,7 @@ font-family: 'Pacifico', cursive;
   flex-direction: column;
   /*text-align: center;*/
   width: 75vw;
-  margin: 1vw;
+  margin: 1vw auto;
 }
 
 #formulaire > form > textarea {
