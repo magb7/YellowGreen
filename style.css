@@ -10,6 +10,9 @@ body {
 }
 
 
+h1, h2, h3 {
+font-family: 'Pacifico', cursive;
+}
 /* =============
 //  HEADER/NAV  //
 ================ */
@@ -58,17 +61,34 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+#our-values {
+  margin-bottom: 3rem;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+#our-values h2 {
   text-align: center;
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
+
+.slideshow-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.mySlides {
+  height: 250px;
+  width: 30%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mySlides h3 {
+  margin-bottom: 2rem;
+  font-size: 20px;
 }
 
 /* Number text (1/3 etc) */
@@ -114,7 +134,27 @@ body {
   to {opacity: 1}
 }
 
+.mySlides p {
+  padding: 0.6rem 0.6rem;
+}
 
+.img1 {
+  background-image: url('Images/slideshow1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img2 {
+  background-image: url('Images/slideshow2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.img3 {
+  background-image: url('Images/slideshow3.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 
 
 /* =============
@@ -132,11 +172,40 @@ body {
 /* =============
 //     FORM     //
 ================ */
+#formulaire {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: dotted yellowgreen;
+  background-color: #3FA663;
+}
 
+#formulaire > h2 {
+  margin: 1vw;
+}
+
+#formulaire > form {
+  display: flex;
+  flex-direction: column;
+  /*text-align: center;*/
+  width: 75vw;
+  margin: 1vw auto;
+}
+
+#formulaire > form > textarea {
+  height: 10vw;
+}
+
+#formulaire p {
+  text-align: center;
+  margin: 1vw 0;
+}
 
 /* =============
 //   ABOUT US    //
 ================ */
+
 .aboutus{
   position: relative;
   display:flex;
@@ -152,6 +221,14 @@ body {
   flex-grow: 3;
   margin:1vw;
 }
+.aboutbox h4, p {
+  margin:.8vw;
+}
+
+.aboutbox h4{
+  font-size: large;
+}
+
 .buttonteam {
   display:flex;
   justify-content: center;
@@ -160,6 +237,8 @@ body {
   padding:10px;
   border-radius: 5px;
   margin: 5vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 
 }
 
