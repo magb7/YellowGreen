@@ -60,7 +60,8 @@ font-family: 'Pacifico', cursive;
   justify-content: center;
   flex-flow: column wrap;
   justify-content: center;
-  border: dotted yellowgreen;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   background-color: #3FA663;
 }
 
@@ -76,13 +77,24 @@ font-family: 'Pacifico', cursive;
   margin: 1vw auto;
 }
 
+.borderer {
+	border-radius: 0px;
+  border: 2px solid black;
+  margin: 1vw 0;
+}
+
 #formulaire > form > textarea {
   height: 10vw;
 }
 
+#send {
+  width: 10vw;
+  margin: 1vw auto;
+}
+
 #formulaire p {
   text-align: center;
-  margin: 1vw 0;
+  margin: 0 1vw 1vw 1vw;
 }
 
 /* =============
