@@ -234,10 +234,16 @@ footer ul>li>ul>li {
 
 .footer {
   height: auto ;
-  background-image: url("Img/footer.jpg");
+  background-image: url("Images/vensign-fu-h_EUD8PNh60-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
 }
 
-.footer>ul {
+
+.footer>ul,
+.footer>a {
   flex: 1;
   padding: 5% 0;i
 }
@@ -256,10 +262,21 @@ footer ul>li>ul>li {
     align-items: center;
 }
 
+.footer ul>li>ul>li {
+color: yellowgreen;
+}
+
 .footer ul>li>ul>li:hover { 
-  filter: brightness(50%);
-  opacity: 0.4;
-  padding: 1.1em;
+  color: #80f0f0;
+}
+
+.spanY2 a {
+  color: lightcoral;
+  font-size: 3em;
+}
+
+.spanY2 a:hover {
+  color: #80f0f0;;
 }
 
 
