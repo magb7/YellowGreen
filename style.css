@@ -98,9 +98,10 @@ font-family: 'Pacifico', cursive;
 
 
 
-footer li {
+footer ul>li>ul>li {
     list-style: none;
-    margin: 5px;
+    padding: 1em;
+
 }
 
 
@@ -133,15 +134,8 @@ footer li {
 .footer ul>li>ul>li:hover { 
   filter: brightness(50%);
   opacity: 0.4;
-  padding: 0.1em;
+  padding: 1.1em;
 }
-
-
-
-
-
-
-
 
 
 /* =============
@@ -154,7 +148,5 @@ footer ul {
         flex-direction: column;
         
     }
-    
-
         
 }
