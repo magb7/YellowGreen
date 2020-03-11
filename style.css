@@ -323,7 +323,7 @@ footer ul>li>ul>li {
 .footer ul,
 .footer ul li ul
 {
-  display: flex;
+  display: flex; 
   justify-content:space-evenly;
 }
 .footer ul li ul {
