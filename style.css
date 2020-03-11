@@ -139,8 +139,8 @@ header {
 ================ */
 #formulaire {
   display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
+  justify-content: space-between;
+  flex-flow: row wrap;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   background-color: #5CF291;
@@ -151,22 +151,41 @@ header {
   #262626*/
 }
 
+#first_half_form {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#first_half_form > input, #first_half_form > select{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+}
+
+#second_half_form {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
 #formulaire > h2 {
   font-size: 40px;
   color:#25594A;
   margin: 3rem auto;
 }
 
-#formulaire > form {
+/*#formulaire > form {
   display: flex;
   flex-direction: column;
-  /*text-align: center;*/
+  /*text-align: center;
   width: 75vw;
   margin: 1vw auto;
-}
+}*/
 
 .borderer {
-	border-radius: 15px;
+	border-radius: 0px 15px;
   border: 2px solid #25594A;
   margin: 1vw 0;
   height: 4vw;
@@ -194,6 +213,7 @@ header {
 #formulaire p {
   text-align: center;
   margin: 0 1vw 1vw 1vw;
+  justify-content: center;
 }
 
 /* =============
