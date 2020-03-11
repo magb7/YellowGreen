@@ -187,12 +187,12 @@ header {
 #about-us h2 {
   text-align: center;
   font-size: 3rem;
-  color: #3391A6;
+  color: #3FA663;
   margin: 3rem;
 }
 
 #about-us h3{
-  color: #3391A6;
+  color: #3FA663;
   font-size: 2rem;
   margin: 2rem;
   text-align: center;
@@ -220,7 +220,6 @@ header {
 .avatarteam {
   display:flex;
   margin-left: 5px;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-flow: wrap;
@@ -228,20 +227,24 @@ header {
 
 
 .team {
-  background: center url("Images/user.png") no-repeat;
-  font-family: 'Oswald', sans-serif;
   margin:.4vw;
   padding: 5vw;
   
 }
+
+.team img{
+  width: 100%;
+}
+
 .team p{
   text-align: center;
   color: white;
   visibility: hidden;;
+  font-family: 'Oswald', sans-serif;
 }
 
 .team:hover{
-  background:#3391A6 no-repeat;
+  background:#3FA663 no-repeat;
 }
 
 .team:hover p{
@@ -296,8 +299,14 @@ footer ul>li>ul>li {
 
 @media screen and (max-width: 960px) {
 
- 
+ /*---------about us--------*/
+ .avatarteam {
+   flex-direction: column;
+   align-items: center;
+ }
 
+
+ /*---------footer--------*/
 
   footer ul {
       flex-direction: column;
