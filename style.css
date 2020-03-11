@@ -2,7 +2,9 @@
 /* ===========
 //  GENERAL  //
 ============== */
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box;
+}
 
 html, 
 body {
@@ -68,67 +70,79 @@ nav .ulheader {
 //   SLIDESHOW    //
 ================ */
 
+#our-values {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 #our-values h2 {
-  text-align: center;
   font-size: 40px;
   color: #25594A;
   margin-bottom: 3rem;
 }
 
-.slideshow-container{
+.slideshow-container {
   display: flex;
-  justify-content: space-around;
-}
-
-.mySlides {
-  height: 250px;
-  width: 30%;
-  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  border-radius: 5px;
+  width: 95%;
 }
 
-.text-box {
-  width: 80%;
-  height: 80%;
+.slideshow-container article {
   display: flex;
-  text-align: center;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  flex-flow: row wrap;
+  height: 250px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.slideshow-container article .image-container {
+  overflow: hidden;
+  border-radius: 3px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slideshow-container article .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-container article .text-container {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
 }
 
-.mySlides h3 {
+.slideshow-container article .text-container h3 {
   margin-bottom: 2rem;
-  font-size: 25px;
+  font-size: 2.5rem;
+  color: #3391A6;
+  text-shadow: 1px 1px 1px #262626;
+}
+
+.slideshow-container article .text-container p {
+  font-size: 1.5rem;
+  text-align: center;
   color: #262626;
 }
-
-.mySlides p {
-  padding: 0.6rem 0.6rem;
-  color: #262626;
-}
-
-.img1 {
-  background-image: url('Images/slideshow1.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-
-.img2 {
-  background-image: url('Images/slideshow2.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-
-.img3 {
-  background-image: url('Images/slideshow3.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-
 
 /* =============
 //   WHAT WE DO  //
@@ -339,7 +353,7 @@ footer ul>li>ul>li {
 .footer ul,
 .footer ul li ul
 {
-  display: flex;
+  display: flex; 
   justify-content:space-evenly;
 }
 .footer ul li ul {
@@ -413,4 +427,4 @@ footer ul {
   }
 }
         
-}
+
