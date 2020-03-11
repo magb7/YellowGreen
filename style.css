@@ -125,12 +125,36 @@ header {
 /* =============
 //   WHAT WE DO  //
 ================ */
+#what-we-do h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
 .wwd-container{
   display: flex;
+  justify-content: space-around;
+}
+#what-we-do article {
+  margin-bottom: 5%;
 }
 .wwd-item{
+  height: 250px;
+  width: 30%;
   text-align: center;
-  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+.wwd-title{
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 25px;
+  color: #262626;
+}
+.wwd-img{
+  display: space-arround;
+  height: auto;
+  width: 33%;
 }
 
 
