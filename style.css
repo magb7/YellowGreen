@@ -178,25 +178,27 @@ nav .ulheader {
   /*width: 75vw;*/
   /*margin: 1vw auto;*/
 }
-
+#in_form>* {
+  border: 2px dotted blue;
+  width: 50%;
+}
 /*#first_half_form {
   width: 50%;
 }*/
 
-#first_half_form > input, #first_half_form > select{
+#first_half_form{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 
-/*#second_half_form {
-  width: 50%;
-}*/
+#second_half_form>textarea {
+  width: 100%;
+}
 
 .borderer {
 	border-radius: 0px 15px;
   border: 2px solid #25594A;
   margin: 1vw 0;
-  /*height: 4vw;*/
   padding: 10px;
   font-size: 16px;
 }
@@ -205,9 +207,9 @@ nav .ulheader {
   
 }
 
-#formulaire > form > textarea {
+/*#formulaire > form > textarea {
   height: 10vw;
-}
+}*/
 
 #send {
   width: 10vw;
