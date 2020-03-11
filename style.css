@@ -9,6 +9,7 @@
 html, 
 body {
     font-family: 'Oswald', sans-serif;
+    color:#323540
 }
 a { 
   color: inherit;
@@ -255,12 +256,12 @@ nav .ulheader {
 #about-us h2 {
   text-align: center;
   font-size: 3rem;
-  color: #3FA663;
+  color: #25594A;
   margin: 3rem;
 }
 
 #about-us h3{
-  color: #3FA663;
+  color: #25594A;
   font-size: 2rem;
   margin: 2rem;
   text-align: center;
@@ -300,19 +301,21 @@ nav .ulheader {
   
 }
 
-.team img{
-  width: 100%;
+.team p img{
+  padding-right: .5rem;
 }
 
 .team p{
   text-align: center;
-  color: white;
+  color: #323540;
   visibility: hidden;;
+  font-size: 1.5rem;
   font-family: 'Oswald', sans-serif;
 }
 
 .team:hover{
-  background: yellowgreen no-repeat;
+  background: lightcoral no-repeat;
+  border-radius: 50%;
 }
 
 .team:hover p{
