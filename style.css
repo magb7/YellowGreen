@@ -265,6 +265,7 @@ footer ul>li>ul>li {
 
 .footer ul>li>ul>li {
 color: #1BBC9B;
+transition: .5s;
 }
 
 .footer ul>li>ul>li:hover { 
