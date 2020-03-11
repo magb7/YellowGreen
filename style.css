@@ -147,8 +147,8 @@ nav .ulheader {
 ================ */
 #formulaire {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+  /*justify-content: space-between;*/
+  flex-flow: column wrap;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   background-color: #5CF291;
@@ -159,21 +159,7 @@ nav .ulheader {
   #262626*/
 }
 
-#first_half_form {
-  width: 50%;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#first_half_form > input, #first_half_form > select{
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%;
-  height: 100%;
-}
-
-#second_half_form {
-  width: 50%;
+#formulaire > form {
   display: flex;
   flex-flow: column wrap;
 }
@@ -184,21 +170,35 @@ nav .ulheader {
   margin: 3rem auto;
 }
 
-/*#formulaire > form {
+#in_form {
   display: flex;
-  flex-direction: column;
-  /*text-align: center;
-  width: 75vw;
-  margin: 1vw auto;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /*text-align: center;*/
+  /*width: 75vw;*/
+  /*margin: 1vw auto;*/
+}
+
+/*#first_half_form {
+  width: 50%;
+}*/
+
+#first_half_form > input, #first_half_form > select{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*#second_half_form {
+  width: 50%;
 }*/
 
 .borderer {
 	border-radius: 0px 15px;
   border: 2px solid #25594A;
   margin: 1vw 0;
-  height: 4vw;
-  padding: 0.8vw 1.5vw;
-  font-size: 1.5vw;
+  /*height: 4vw;*/
+  padding: 10px;
+  font-size: 16px;
 }
 
 #formulaire > form > input {
@@ -220,8 +220,7 @@ nav .ulheader {
 
 #formulaire p {
   text-align: center;
-  margin: 0 1vw 1vw 1vw;
-  justify-content: center;
+  margin: 1vw;
 }
 
 /* =============
