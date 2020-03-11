@@ -234,7 +234,8 @@ footer ul>li>ul>li {
 
 .footer {
   height: auto ;
-  background-image: url("Images/vensign-fu-h_EUD8PNh60-unsplash.jpg");
+  background: linear-gradient(to top, rgba(255,255,255,0) 20%,
+  rgba(255,255,255,1)), url("Images/vensign-fu-h_EUD8PNh60-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,11 +264,13 @@ footer ul>li>ul>li {
 }
 
 .footer ul>li>ul>li {
-color: yellowgreen;
+color: #1BBC9B;
 }
 
 .footer ul>li>ul>li:hover { 
-  color: #80f0f0;
+  color: lightcoral;
+  background:rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
 }
 
 .spanY2 a {
@@ -276,7 +279,8 @@ color: yellowgreen;
 }
 
 .spanY2 a:hover {
-  color: #80f0f0;;
+  color: #71C6D9; 
+
 }
 
 
