@@ -246,10 +246,17 @@ footer ul>li>ul>li {
 
 .footer {
   height: auto ;
-  background-image: url("Img/footer.jpg");
+  background: linear-gradient(to top, rgba(255,255,255,0) 20%,
+  rgba(255,255,255,1)), url("Images/vensign-fu-h_EUD8PNh60-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
 }
 
-.footer>ul {
+
+.footer>ul,
+.footer>a {
   flex: 1;
   padding: 5% 0;i
 }
@@ -268,10 +275,24 @@ footer ul>li>ul>li {
     align-items: center;
 }
 
+.footer ul>li>ul>li {
+color: #1BBC9B;
+}
+
 .footer ul>li>ul>li:hover { 
-  filter: brightness(50%);
-  opacity: 0.4;
-  padding: 1.1em;
+  color: lightcoral;
+  background:rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+
+.spanY2 a {
+  color: lightcoral;
+  font-size: 3em;
+}
+
+.spanY2 a:hover {
+  color: #71C6D9; 
+
 }
 
 
