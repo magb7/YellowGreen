@@ -192,7 +192,6 @@ nav .ulheader {
 ================ */
 #formulaire {
   display: flex;
-  justify-content: center;
   flex-flow: column wrap;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -204,49 +203,61 @@ nav .ulheader {
   #262626*/
 }
 
+#formulaire > form {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 #formulaire > h2 {
   font-size: 40px;
   color:#25594A;
   margin: 3rem auto;
 }
 
-#formulaire > form {
+#in_form {
   display: flex;
-  flex-direction: column;
-  /*text-align: center;*/
-  width: 75vw;
-  margin: 1vw auto;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+#in_form>* {
+  width: 46vw;
+  margin: 0 1vw;
+}
+
+#first_half_form{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#second_half_form>textarea {
+  width: 100%;
+  height: 15vw;
 }
 
 .borderer {
-	border-radius: 15px;
+	border-radius: 0px 15px;
   border: 2px solid #25594A;
   margin: 1vw 0;
-  height: 4vw;
-  padding: 0.8vw 1.5vw;
-  font-size: 1.5vw;
-}
-
-#formulaire > form > input {
-  
-}
-
-#formulaire > form > textarea {
-  height: 10vw;
+  padding: 10px;
+  font-size: 16px;
 }
 
 #send {
-  width: 10vw;
+  width: 130px;
   margin: 1vw auto;
+  transition: background-color .5s, width .5s;
+  cursor: pointer;
 }
 
 #send:hover {
-
+  background-color: #3FA663;
+  width: 100px;
 }
 
 #formulaire p {
   text-align: center;
-  margin: 0 1vw 1vw 1vw;
+  margin: 1vw;
 }
 
 /* =============
