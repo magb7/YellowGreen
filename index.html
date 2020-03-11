@@ -82,12 +82,12 @@
             <form>
                 <div id="in_form">
                     <div id="first_half_form">
-                        <label>Your Email:</label>
-                        <input class="mail_and_phone borderer" type="email" placeholder="ex: yellowgreen@yellowgreen.com">
-                        <label>Your phone:</label>
-                        <input class="mail_and_phone borderer" type="phone" placeholder="ex: 03 12 34 56 78">
+                        <label for="email_form">Your Email:</label>
+                        <input id="email_form" class="mail_and_phone borderer" placeholder="ex: yellowgreen@yellowgreen.com">
+                        <label for="phone_form">Your phone:</label>
+                        <input id="phone_form" class="mail_and_phone borderer" placeholder="ex: 03 12 34 56 78">
                         <label>Choose a topic:</label>
-                        <select class="borderer" id="category" name="category">
+                        <select class="borderer" id="category_form">
                             <option value="quote">I need a quote:</option>
                             <option value="questions">I have questions concerning your values:</option>
                             <option value="questions">I have questions concerning your delays:</option>
@@ -96,8 +96,8 @@
                         </select>
                     </div>
                     <div id="second_half_form">
-                        <label>Your Message:</label>
-                        <textarea placeholder="Your message" class="borderer" rows="10" cols="50"></textarea>
+                        <label for="message_textarea">Your Message:</label>
+                        <textarea id="message_textarea" placeholder="Your message" class="borderer"></textarea>
                     </div>
                 </div>
                 <input class="borderer" id="send" type="submit" value="Send !">

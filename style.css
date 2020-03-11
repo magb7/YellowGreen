@@ -147,7 +147,6 @@ nav .ulheader {
 ================ */
 #formulaire {
   display: flex;
-  /*justify-content: space-between;*/
   flex-flow: column wrap;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -174,17 +173,12 @@ nav .ulheader {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  /*text-align: center;*/
-  /*width: 75vw;*/
-  /*margin: 1vw auto;*/
 }
+
 #in_form>* {
-  border: 2px dotted blue;
-  width: 50%;
+  width: 46vw;
+  margin: 0 1vw;
 }
-/*#first_half_form {
-  width: 50%;
-}*/
 
 #first_half_form{
   display: flex;
@@ -193,6 +187,7 @@ nav .ulheader {
 
 #second_half_form>textarea {
   width: 100%;
+  height: 15vw;
 }
 
 .borderer {
@@ -203,21 +198,16 @@ nav .ulheader {
   font-size: 16px;
 }
 
-#formulaire > form > input {
-  
-}
-
-/*#formulaire > form > textarea {
-  height: 10vw;
-}*/
-
 #send {
-  width: 10vw;
+  width: 130px;
   margin: 1vw auto;
+  transition: background-color .5s, width .5s;
+  cursor: pointer;
 }
 
 #send:hover {
-
+  background-color: #3FA663;
+  width: 100px;
 }
 
 #formulaire p {
