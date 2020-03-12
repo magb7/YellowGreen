@@ -67,6 +67,92 @@ nav .ulheader {
   color: white;
 }
 
+/* ================
+//   SOME PROJECTS  //
+=================== */
+#some-projects {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#some-projects h2 {
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
+
+#some-projects .projects-container {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#some-projects .projects-container article {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  margin: 15px;
+  border-radius: 3px;
+  box-shadow: 12px 12px 10px #F08080;
+}
+
+#some-projects .projects-container article:nth-of-type(2n +2) {
+  box-shadow: 12px 12px 10px #3FA663;
+}
+
+#some-projects .projects-container article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =============
+//   WHAT WE DO  //
+================ */
+#what-we-do {
+  min-height: auto;
+  margin-bottom: 5%;
+}
+#what-we-do h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #25594A;
+  margin-bottom: 3rem;
+}
+.wwd-container{
+  display: flex;
+  justify-content: space-around;
+}
+.wwd-item{
+  min-height: 250px;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.wwd-title{
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 25px;
+  color: #262626;
+}
+.wwd-img{
+  display: space-arround;
+  height: auto;
+  width: 33%;
+  margin-bottom: 1rem;
+}
+#what-we-do p {
+  overflow: ;
+  margin-bottom: 5%;
+}
+
 /* =============
 //   SLIDESHOW    //
 ================ */
@@ -145,46 +231,7 @@ nav .ulheader {
   color: #262626;
 }
 
-/* =============
-//   WHAT WE DO  //
-================ */
-#what-we-do {
-  min-height: auto;
-  margin-bottom: 5%;
-}
-#what-we-do h2 {
-  text-align: center;
-  font-size: 40px;
-  color: #25594A;
-  margin-bottom: 3rem;
-}
-.wwd-container{
-  display: flex;
-  justify-content: space-around;
-}
-.wwd-item{
-  min-height: 250px;
-  width: 30%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.wwd-title{
-  display: block;
-  margin-bottom: 2rem;
-  font-size: 25px;
-  color: #262626;
-}
-.wwd-img{
-  display: space-arround;
-  height: auto;
-  width: 33%;
-  margin-bottom: 1rem;
-}
-#what-we-do p {
-  overflow: ;
-  margin-bottom: 5%;
-}
+
 
 
 /* =============
