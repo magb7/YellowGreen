@@ -39,6 +39,6 @@ pour V1.1
 
 - améliorer bouton
 - champ « form » sélectionné change de couleur de fond progressivement
-- styliser le <select> de « form » avec JS
+- styliser le select de « form » avec JS
 - p inline pour « about us »
 - menu burger
