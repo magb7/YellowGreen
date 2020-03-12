@@ -430,7 +430,15 @@ nav .ulheader {
   font-size: 6rem;
 }
 
+/* =============
+//     FORM     //
+================ */
 
+#in_form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
 
 /*============
 //     Footer   //
