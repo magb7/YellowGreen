@@ -6,6 +6,8 @@
   box-sizing:border-box;
 }
 
+
+
 html, 
 body {
     font-family: 'Oswald', sans-serif;
@@ -24,6 +26,11 @@ font-family: 'Pacifico', cursive;
 /* =============
 //  HEADER/NAV  //
 ================ */
+
+
+
+
+
 
 header {
   padding: 60px 0;
@@ -383,21 +390,30 @@ transition: .5s;
 }
 
 .footer ul>li>ul>li:hover
-
 { 
   color: lightcoral;
   background:rgba(255, 255, 255, 0.6);
   border-radius: 5px;
 }
 
-.spanY2 a {
+#spanY2 a {
   color: lightcoral;
   font-size: 3em;
+  transition: 0.5s all;
 }
 
-.spanY2 ul>li>ul>li:hover {
+#spanY2:hover a {
   color: #3391A6;
 }
+
+#spanY2:hover {
+transform: rotate(5deg);
+}
+
+
+
+
+
 
 
 /* =============
@@ -454,4 +470,3 @@ footer ul {
   }
 }
         
-
