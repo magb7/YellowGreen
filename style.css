@@ -229,8 +229,8 @@ nav .ulheader {
 .slideshow-container article .text-container h3 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: #3391A6;
-  text-shadow: 1px 1px 1px #262626;
+  color: var(--corail_color);
+  text-shadow: 2px 2px 1px var(--dark_color);
 }
 
 .slideshow-container article .text-container p {
