@@ -350,14 +350,15 @@ nav .ulheader {
   justify-content: center;
 }
 
+
 .aboutus iframe{
-  flex-grow: 1;
-  margin-left:5vw;
+  flex-grow: 9;
+  margin:2vw;
 }
 
 .aboutbox {
-  flex-grow: 2;
-  margin-left:5vw;
+  flex-grow: 3;
+  margin:2vw;
 }
 .aboutbox p {
   margin:.8vw;
