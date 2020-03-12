@@ -27,21 +27,20 @@ font-family: 'Pacifico', cursive;
 
 header {
   padding: 60px 0;
-  background-image:  url("Images/header.jpg");
+  background-image:  url("Images/mountains.jpg");
   background-size: cover;
   background-position: center center;
-  color: white;
+  color: ;
 }
 nav {
   width: 100%;
-  background-color: rgb(63, 166, 99);
+  background-color: #F08080;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 15px 0;
-  
-
+  z-index: 10;
 }
 
 .titreh1 {
@@ -49,11 +48,12 @@ nav {
   justify-content: center;
   font-size: 6rem;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  color: white;
 }
 
 .spanY {
-  color: yellowgreen;
+  color: #5CF291;
   font-size: 12rem;
 }
 
@@ -63,7 +63,12 @@ nav .ulheader {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
+}
+.liheader {
+  color: #25594A;
+}
+.liheader:hover {
   color: white;
 }
 
@@ -422,7 +427,9 @@ nav .ulheader {
   flex-direction: column;
   align-items: center;
 }
-
+.liheader{
+  padding: 8px;
+}
 .titreh1 {
   font-size: 3rem;
 }
