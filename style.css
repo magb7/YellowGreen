@@ -322,6 +322,10 @@ nav .ulheader {
 //   ABOUT US    //
 ================ */
 
+#about-us {
+  /*background: linear-gradient(var(--white_color) 5%, var(--corail_color) 70%, var(--white_color));*/
+}
+
 .aboutus{
   display:flex;
   justify-content: center;
