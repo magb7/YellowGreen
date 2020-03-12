@@ -6,6 +6,13 @@
   box-sizing:border-box;
 }
 
+:root{
+  --darkgreen_color: #3FA663;
+  --lightgreen_color: #5CF291;
+  --white_color: #ffffff;
+  --corail_color: #f08080;
+  --dark_color: #323540;
+}
 
 html, 
 body {
