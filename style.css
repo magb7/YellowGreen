@@ -298,6 +298,8 @@ nav .ulheader {
 footer ul>li>ul>li {
     list-style: none;
     padding: 1em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #71C6D9;
 }
 
 .footer {
@@ -306,15 +308,15 @@ footer ul>li>ul>li {
   rgba(255,255,255,1)), url("Images/vensign-fu-h_EUD8PNh60-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
+  background-position: 70% 30%;
 }
 
 
 .footer>ul,
 .footer>a {
   flex: 1;
-  padding: 5% 0;i
+  padding: 5% 0;
+  font-size: 1.4rem;
 }
 
 
@@ -332,11 +334,13 @@ footer ul>li>ul>li {
 }
 
 .footer ul>li>ul>li {
-color: #1BBC9B;
+color: #3391A6;
 transition: .5s;
 }
 
-.footer ul>li>ul>li:hover { 
+.footer ul>li>ul>li:hover
+
+{ 
   color: lightcoral;
   background:rgba(255, 255, 255, 0.6);
   border-radius: 5px;
@@ -347,9 +351,8 @@ transition: .5s;
   font-size: 3em;
 }
 
-.spanY2 a:hover {
-  color: #71C6D9; 
-
+.spanY2 ul>li>ul>li:hover {
+  color: #3391A6;
 }
 
 
@@ -369,6 +372,7 @@ transition: .5s;
 /*============
 //     Header Nav   //
 ==================*/
+
 nav .ulheader {
   flex-direction: column;
   align-items: center;
