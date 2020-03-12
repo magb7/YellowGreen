@@ -58,6 +58,7 @@ nav {
   padding-top: 50px;
   padding-bottom: 50px;
   color: white;
+  text-shadow: -1px 0px 24px black;
 }
 
 .spanY {
@@ -78,6 +79,7 @@ nav .ulheader {
 }
 .liheader:hover {
   color: white;
+  font-size: 1.9rem;
 }
 
 /* ================
