@@ -7,7 +7,7 @@
 
 :root{
   --darkgreen_color: #3FA663;
-  --lightgreen_color: #5CF291;
+  --lightgreen_color: rgb(92, 242, 145);
   --white_color: #ffffff;
   --corail_color: #f08080;
   --dark_color: #323540;
@@ -261,9 +261,9 @@ nav .ulheader {
 #formulaire {
   display: flex;
   flex-flow: column wrap;
-  border-top: 3px solid var(--dark_color);
-  border-bottom: 3px solid var(--dark_color);
-  background-color: var(--lightgreen_color);
+  border-top: 1px solid var(--dark_color);
+  border-bottom: 1px solid var(--dark_color);
+  background-color: rgba(92, 242, 145, .6);
 }
 
 #formulaire > form {
@@ -300,11 +300,20 @@ nav .ulheader {
   font-size: 16px;
 }
 
+form label {
+  font-size: 1.2rem;
+}
+
+form input, textarea::placeholder {
+  font-weight: lighter;
+}
+
 #send {
   width: 130px;
   margin: 3vw auto;
   transition: background-color .5s, width .5s;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 #send:hover {
