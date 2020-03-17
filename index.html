@@ -7,7 +7,7 @@
     <!-- reset.css cancels browser's default CSS" -->
     <link rel="stylesheet" href="style.css">
     <!--Pacifico font h1 h2 /Oswald regular-->
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Pacifico&display=swap" rel="stylesheet">
     <title>YellowGreen</title>
 </head>
 
@@ -20,8 +20,8 @@
     <nav>
         <ul class="ulheader">
             <li class="liheader"><a href="#what-we-do">What we do</a></li>
-            <li class="liheader"><a href="#some-projects">Our Project</a></li>
             <li class="liheader"><a href="#our-values">Our Values</a></li>
+            <li class="liheader"><a href="#some-projects">Our Projects</a></li>
             <li class="liheader"><a href="#formulaire">Contact us</a></li>
             <li class="liheader"><a href="#about-us">About us</a>
             <li class="liheader"><a href="#meet-our-team">Meet our team</a>
@@ -61,7 +61,52 @@
 
         <hr>
 
-        <section id="some-projects">
+        <!--SECTION OUR VALUES /// MARGAUX-->
+        <section id="our-values">
+            <h2>Our Values</h2>
+            <div class="values-container">
+                <article class="right">
+                    <div class="image-container">
+                        <img src="Images/values1.jpg" alt="Leaves">
+                    </div>
+                    <div class="text-container">
+                        <h3>Eco-design</h3>
+                        <p>
+                            Eco-design consists in taking into account the environmental impact of its achievements from the idea to the grave.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="left">
+                    <div class="image-container">
+                        <img src="Images/slideshow2.jpg" alt="Trees">
+                    </div>
+                    <div class="text-container">
+                        <h3>Commitment</h3>
+                        <p>
+                            At Yellowgreen we are committed to working with partners who share the same values. This is why all our partners use water-based inks and recycled paper.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="right">
+                    <div class="image-container">
+                        <img src="Images/slideshow3.jpg" alt="Hands">
+                    </div>
+                    <div class="text-container">
+                        <h3>Co-design</h3>
+                        <p>
+                            So that you are completely comfortable with the image of your project, let's take some time to put things flat and get ideas out !
+                        </p>
+                    </div>
+                </article>
+            </div>    
+        </section>
+
+        <hr>
+
+         <!-- SOME PROJECTS -->
+         <section id="some-projects">
             <h2>Some Projects</h2>
             <div class="projects-container">
                 <article>
@@ -85,50 +130,6 @@
             </div>
         </section>
 
-        <hr>
-
-        <!--SECTION SLIDESHOW OUR VALUES /// MARGAUX-->
-        <section id="our-values">
-            <h2>Our Values</h2>
-            <div class="slideshow-container">
-                <article>
-                    <div class="image-container">
-                        <img src="Images/slideshow1.jpg" alt="Leaves">
-                    </div>
-                    <div class="text-container">
-                        <h3>Eco-design</h3>
-                        <p>
-                            Eco-design consists in taking into account the environmental impact of its achievements from the idea to the grave.
-                        </p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="image-container">
-                        <img src="Images/slideshow2.jpg" alt="Trees">
-                    </div>
-                    <div class="text-container">
-                        <h3>Commitment</h3>
-                        <p>
-                            At Yellowgreen we are committed to working with partners who share the same values. This is why all our partners use water-based inks and recycled paper.
-                        </p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="image-container">
-                        <img src="Images/slideshow3.jpg" alt="Hands">
-                    </div>
-                    <div class="text-container">
-                        <h3>Co-design</h3>
-                        <p>
-                            So that you are completely comfortable with the image of your project, let's take some time to put things flat and get ideas out !
-                        </p>
-                    </div>
-                </article>
-            </div>    
-        </section>
-
         <!--Form RoxaneDrelon--> 
         <section id="formulaire">
             <!-- <h2> outside of <form> -->
@@ -139,9 +140,9 @@
                 <div id="in_form">
                     <div id="first_half_form">
                         <label for="email_form">Your Email:</label>
-                        <input id="email_form" class="mail_and_phone borderer" placeholder="ex: yellowgreen@yellowgreen.com">
+                        <input id="email_form" class="mail_and_phone borderer" placeholder="yellowgreen@yellowgreen.com">
                         <label for="phone_form">Your phone:</label>
-                        <input id="phone_form" class="mail_and_phone borderer" placeholder="ex: 03 12 34 56 78">
+                        <input id="phone_form" class="mail_and_phone borderer" placeholder="03 12 34 56 78">
                         <label>Choose a topic:</label>
                         <select class="borderer" id="category_form">
                             <option value="quote">I need a quote:</option>
