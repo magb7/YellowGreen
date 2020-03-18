@@ -345,9 +345,56 @@ form input, textarea::placeholder {
   text-align: center;
   margin: 1vw;
 }
+/* =============
+//   THEY TRUST US    //
+================ */
+.container-testimonial{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.testimonial {
+  background-color:var(--corail_color);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px;
+
+}
+
+.testimonial__icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  color: var(--darkgreen_color);
+}
+
+.testimonial__quote {
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+}
+
+.testimonial__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include breakpoint(md) {
+    margin-top: auto;
+  }
+}
+
+.testimonial__cite {
+  font-size: var(--text-sm);
+
+  span {
+    display: block;
+    color: var(--dark_color);
+  }
+}
 
 /* =============
-//   ABOUT US    //
+//   MEET OUR TEAM    //
 ================ */
 
 #about-us {
