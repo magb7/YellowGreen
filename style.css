@@ -350,16 +350,15 @@ form input, textarea::placeholder {
 ================ */
 .container-testimonial{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  
 }
 
 .testimonial {
-  background-color:var(--corail_color);
   padding: 15px;
   border-radius: 5px;
   margin: 15px;
-
+  flex: 1 1 0;
 }
 
 .testimonial__icon {
@@ -385,14 +384,15 @@ form input, textarea::placeholder {
 }
 
 .testimonial__cite {
-  font-size: var(--text-sm);
-
+  font-size: 1rem;
+  font-style: italic;
   span {
-    display: block;
     color: var(--dark_color);
   }
 }
-
+.testimonial mark{
+  background-color: var(--lightgreen_color);
+}
 /* =============
 //   MEET OUR TEAM    //
 ================ */
