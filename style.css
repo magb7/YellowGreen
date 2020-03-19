@@ -140,6 +140,8 @@ nav .ulheader {
   margin-bottom: 1rem;
 }
 #what-we-do p {
+  line-height: 150%;
+  font-size: 120%;
   margin-bottom: 5%;
   line-height: 120%;
 }
@@ -323,14 +325,24 @@ form label {
   font-size: 1.2rem;
 }
 
-form input, textarea::placeholder {
+.mail_and_phone, form textarea {
+  transition: background-color .5s, color .5s;
+}
+
+.mail_and_phone, form textarea::placeholder {
   font-weight: lighter;
+  font-style: italic;
+}
+
+.mail_and_phone:focus, form textarea:focus {
+  background-color: var(--corail_color);
+  color: var(--white_color);
 }
 
 #send {
   width: 130px;
   margin: 3vw auto;
-  transition: background-color .5s, width .5s;
+  transition: background-color .5s, transform .5s, color .5s;
   cursor: pointer;
   font-weight: bolder;
 }
@@ -338,7 +350,7 @@ form input, textarea::placeholder {
 #send:hover {
   background-color: var(--corail_color);
   color: var(--white_color);
-  width: 100px;
+  transform: scale(1.3);
 }
 
 #formulaire p {
@@ -548,6 +560,11 @@ transform: rotate(5deg);
   }
 
   /*-----WHAT WE DO-----*/
+  .wwd-container{
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
   .wwd-item {
     flex-direction: column;
     flex-flow: wrap;
