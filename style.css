@@ -242,38 +242,53 @@ nav .ulheader {
   align-items: center;
 }
 
-#some-projects .projects-container {
-  width: 95%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#some-projects .projects-container article {
-  width: 400px;
-  height: 300px;
+#some-projects .carousel-container {
+  width: 90vw;
+  margin: auto;
   overflow: hidden;
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: 12px 12px 10px rgba(240, 128, 128, .7);
+  /*border: 5px solid black;*/
+  position: relative;
 }
 
-#some-projects .projects-container article img:hover {
-  width: 105%;
-  height: 105%;
-}
-
-#some-projects .projects-container article:nth-of-type(2n +2) {
-  box-shadow: 12px 12px 10px rgba(63, 166, 99, .6);
-}
-
-#some-projects .projects-container article img {
+#some-projects .carousel-container .carousel-slide {
+  display: flex;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: width .5s, height .5s;
+  height: 500px;
 }
+
+#some-projects .carousel-container .carousel-slide img {
+  object-fit: cover;
+}
+
+#some-projects .carousel-container #prevBtn, #nextBtn {
+  cursor: pointer;
+  color:var(--darkdarkgreen);
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+}
+
+#some-projects .carousel-container #prevBtn {
+  top: 45%;
+  left: 5%;
+}
+
+#some-projects .carousel-container #nextBtn {
+  top: 45%;
+  right: 5%;
+}
+
+#some-projects .carousel-container #prevBtn:hover, #nextBtn:hover {
+  color: var(--corail_color);
+}
+
+/* Pour les liens à retravailler après */
+#some-projects article {
+  display: none;
+}
+
 
 /* =============
 //     FORM     //
