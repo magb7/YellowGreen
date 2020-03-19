@@ -170,7 +170,8 @@ nav .ulheader {
   margin-bottom: 1rem;
 }
 #what-we-do p {
-  overflow: ;
+  line-height: 150%;
+  font-size: 120%;
   margin-bottom: 5%;
 }
 
