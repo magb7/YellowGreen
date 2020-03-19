@@ -130,11 +130,13 @@ nav .ulheader {
 }
 
 .wwd-item{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   min-height: 250px;
   width: 32vw;
   text-align: center;
   align-items: center;
-  justify-content: center;
   transition: 0.5s;
 }
 
@@ -142,13 +144,6 @@ nav .ulheader {
   opacity: 1.0;
   width: 40vw;
   transform: scale(1.2);
-}
-
-#what-we-do article {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
 }
 
 .wwd-title{
