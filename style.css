@@ -450,10 +450,16 @@ form label {
   padding-right: .5rem;
 }
 
-.team p {
+.team .meetLinkedin {
   text-align: center;
   color: var(--dark_color);
   visibility: hidden;
+}
+
+.meetLinkedin {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .team:hover{
@@ -461,7 +467,7 @@ form label {
   border-radius: 50%;
 }
 
-.team:hover p{
+.team:hover .meetLinkedin {
   visibility: visible;
 }
 
