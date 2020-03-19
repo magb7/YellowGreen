@@ -123,21 +123,34 @@ nav .ulheader {
   justify-content: space-around;
   transition: 0.7s;
 }
+
 .wwd-container:hover > .wwd-item{
   opacity: 0.6;
+  transform: scale(0.9);
 }
+
 .wwd-item{
   min-height: 250px;
-  width: 30%;
+  width: 32vw;
   text-align: center;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
 }
+
 .wwd-container:hover > .wwd-item:hover{
   opacity: 1.0;
-  width: 40%;
+  width: 40vw;
+  transform: scale(1.2);
 }
+
+#what-we-do article {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
 .wwd-title{
   display: block;
 }
@@ -145,14 +158,15 @@ nav .ulheader {
 .wwd-img{
   display: space-arround;
   height: auto;
-  width: 33%;
+  width: 15vw;
   margin-bottom: 1rem;
 }
+
 #what-we-do p {
-  line-height: 150%;
   font-size: 120%;
   margin-bottom: 5%;
   line-height: 120%;
+  width: 25vw;
 }
 
 /* ==============
