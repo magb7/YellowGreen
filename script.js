@@ -1,13 +1,52 @@
 ///////////////
 // FOOTER //
 
-const footerElem = document.getElementById('aboutUs');
+const main = document.getElementById('main');
+const cookies = document.getElementById('cookies');
+const buttonElement = document.getElementById('btn');
+const trigger1 = 'load'; 
+ const trigger2 = 'click'; 
 
-function changeStyler(newColor,size,content) {
-    footerElem.style.color = newColor;
-    footerElem.style.fontSize = size;
-    footerElem.innerHTML = content;
-  };
+
+console.log(cookies);
+
+function bluredBody (filter) {
+    main.style.filter = filter;
+
+
+};
+
+
+function acceptCookie (display,position,top,left,width) {
+    cookies.style.display = display;
+    cookies.style.position = position;
+    cookies.style.top = top;
+    cookies.style.left = left;
+    cookies.style.width = width;
+      
+};
+
+
+main.addEventListener(trigger1, bluredBody('blur(8px)'));
+cookies.addEventListener(trigger1, acceptCookie('block','absolute','30%','10%','80vw'));
+
+
+btn.addEventListener(trigger2, function (event) {
+    bluredBody('blur(0px)');
+    acceptCookie('none');
+  });
+
   
 
-  footerElem.addEventListener("mouseover", changeStyler('blue','2 rem', 'discover more !' ));
+
+
+
+//buttonElement.addEventListener('click', acceptCookie('none','absolute','30%','10%','80vw'));
+
+
+
+
+
+
+
+
