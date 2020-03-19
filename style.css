@@ -550,6 +550,11 @@ transform: rotate(5deg);
   }
 
   /*-----WHAT WE DO-----*/
+  .wwd-container{
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
   .wwd-item {
     flex-direction: column;
     flex-flow: wrap;
