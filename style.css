@@ -350,23 +350,20 @@ form input, textarea::placeholder {
 ================ */
 .container-testimonial{
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  
+  width: 60vw;
+  margin: auto;
 }
 
 .testimonial {
-  padding: 15px;
-  border-radius: 5px;
-  margin: 15px;
-  flex: 1 1 0;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 250 px;
+  display: none;
 }
 
 .testimonial__icon {
-  display: block;
   width: 64px;
   height: 64px;
+  stroke: var(--darkgreen_color);
   color: var(--darkgreen_color);
 }
 
@@ -376,13 +373,8 @@ form input, textarea::placeholder {
 }
 
 .testimonial__footer {
-  display: flex;
-  align-items: center;
+  align-self: flex-end;
   flex-wrap: wrap;
-
-  @include breakpoint(md) {
-    margin-top: auto;
-  }
 }
 
 
