@@ -350,82 +350,51 @@ form input, textarea::placeholder {
 ================ */
 .container-testimonial{
   display: flex;
-  width: 60vw;
+  width: 80vw;
   margin: auto;
 }
 
-.testimonial {
+.testimonialBox {
   width: 100%;
   height: 250 px;
-  display: none;
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.testimonial__icon {
+
+.testimonialBoxIcon {
   width: 64px;
   height: 64px;
   stroke: var(--darkgreen_color);
   color: var(--darkgreen_color);
 }
 
-.testimonial__quote {
+.testimonialBoxQuote {
   line-height: 1.4;
   margin-bottom: 5px;
 }
 
-.testimonial__footer {
+.testimonialBoxQuote mark{
+  background-color: var(--lightgreen_color);
+}
+
+.testimonialBox footer {
   align-self: flex-end;
   flex-wrap: wrap;
 }
 
 
-.testimonial__cite {
+.testimonialBox cite {
   font-size: 1rem;
   font-style: italic;
 }
 
-.testimonial__cite  span {
+.testimonialBox cite  span {
     color: var(--dark_color);
   }
 
-.testimonial mark{
-  background-color: var(--lightgreen_color);
-}
-
-button {
-  height: 10%;
-  border: none;
-  outline: none;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  padding: 1em;
-  display: flex;
-}
-
-button .arrow {
-  border: solid #fff;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 10px;
-  transition: transform 0.3s ease-out;
-  outline: none;
-}
-
-#right-btn {
-  margin: auto 0 auto -2em;
-}
-
-#right-btn .arrow {
-  transform: rotate(-45deg);
-}
-
-#left-btn {
-  z-index: 0;
-  margin: auto -2em auto 0;
-}
-
-#left-btn .arrow {
-  transform: rotate(135deg);
-}
 /* =============
 //   MEET OUR TEAM    //
 ================ */
