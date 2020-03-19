@@ -323,8 +323,18 @@ form label {
   font-size: 1.2rem;
 }
 
-form input, textarea::placeholder {
+.mail_and_phone, form textarea {
+  transition: background-color .5s, color .5s;
+}
+
+.mail_and_phone, form textarea::placeholder {
   font-weight: lighter;
+  font-style: italic;
+}
+
+.mail_and_phone:focus, form textarea:focus {
+  background-color: var(--corail_color);
+  color: var(--white_color);
 }
 
 #send {
