@@ -121,6 +121,10 @@ nav .ulheader {
 .wwd-container{
   display: flex;
   justify-content: space-around;
+  transition: 0.7s;
+}
+.wwd-container:hover > .wwd-item{
+  opacity: 0.6;
 }
 .wwd-item{
   min-height: 250px;
@@ -128,6 +132,11 @@ nav .ulheader {
   text-align: center;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+}
+.wwd-container:hover > .wwd-item:hover{
+  opacity: 1.0;
+  width: 40%;
 }
 .wwd-title{
   display: block;
