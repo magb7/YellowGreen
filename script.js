@@ -39,6 +39,10 @@ btn.addEventListener(trigger2, function (event) {
   
 
 
+// class
+const containerTestimonial = document.getElementsByClassName('container-testimonial');
+const testimonialBox = document.getElementsByClassName('testimonialBox');
+
 
 
 //buttonElement.addEventListener('click', acceptCookie('none','absolute','30%','10%','80vw'));

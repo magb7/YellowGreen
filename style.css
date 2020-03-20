@@ -380,49 +380,47 @@ form label {
 ================ */
 .container-testimonial{
   display: flex;
-  justify-content: space-between;
-  
+  width: 80vw;
+  margin: auto;
 }
 
-.testimonial {
-  padding: 15px;
-  border-radius: 5px;
-  margin: 15px;
-  flex: 1 1 0;
+.testimonialBox {
+  width: 100%;
+  height: 250 px;
 }
 
-.testimonial__icon {
-  display: block;
+
+.testimonialBoxIcon {
   width: 64px;
   height: 64px;
+  stroke: var(--darkgreen_color);
   color: var(--darkgreen_color);
 }
 
-.testimonial__quote {
+.testimonialBoxQuote {
   line-height: 1.4;
-  margin-bottom: var(--space-md);
+  margin-bottom: 5px;
 }
 
-.testimonial__footer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @include breakpoint(md) {
-    margin-top: auto;
-  }
-}
-
-.testimonial__cite {
-  font-size: 1rem;
-  font-style: italic;
-  span {
-    color: var(--dark_color);
-  }
-}
-.testimonial mark{
+.testimonialBoxQuote mark{
   background-color: var(--lightgreen_color);
 }
+
+.testimonialBox footer {
+  align-self: flex-end;
+  flex-wrap: wrap;
+}
+
+
+.testimonialBox cite {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.testimonialBox cite  span {
+    color: var(--dark_color);
+  }
+
 /* =============
 //   MEET OUR TEAM    //
 ================ */
@@ -462,10 +460,15 @@ form label {
 .team {
   margin:.4vw;
   padding: 5vw;
+  border-radius: 40%;
+  background-color: transparent;
+  -webkit-transition: background 1s, border-radius 0.5s;
+  transition: background 1s, border-radius 0.5s;
 }
 
 .team p img{
   padding-right: .5rem;
+  opacity: 0%;
 }
 
 .team .meetLinkedin {
@@ -481,8 +484,8 @@ form label {
 }
 
 .team:hover{
-  background: var(--corail_color) no-repeat;
   border-radius: 50%;
+  background-color: var(--corail_color);
 }
 
 .team:hover .meetLinkedin {
