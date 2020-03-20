@@ -127,14 +127,31 @@ nav .ulheader {
 .wwd-container{
   display: flex;
   justify-content: space-around;
+  transition: 0.7s;
 }
+
+.wwd-container:hover > .wwd-item{
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
 .wwd-item{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   min-height: 250px;
-  width: 30%;
+  width: 32vw;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  transition: 0.5s;
 }
+
+.wwd-container:hover > .wwd-item:hover{
+  opacity: 1.0;
+  width: 40vw;
+  transform: scale(1.2);
+}
+
 .wwd-title{
   display: block;
 }
@@ -142,14 +159,15 @@ nav .ulheader {
 .wwd-img{
   display: space-arround;
   height: auto;
-  width: 33%;
+  width: 15vw;
   margin-bottom: 1rem;
 }
+
 #what-we-do p {
-  line-height: 150%;
   font-size: 120%;
   margin-bottom: 5%;
   line-height: 120%;
+  width: 25vw;
 }
 
 /* ==============
@@ -456,10 +474,16 @@ form label {
   padding-right: .5rem;
 }
 
-.team p {
+.team .meetLinkedin {
   text-align: center;
   color: var(--dark_color);
   visibility: hidden;
+}
+
+.meetLinkedin {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .team:hover{
@@ -467,7 +491,7 @@ form label {
   border-radius: 50%;
 }
 
-.team:hover p{
+.team:hover .meetLinkedin {
   visibility: visible;
 }
 
@@ -475,12 +499,12 @@ form label {
 //   FOOTER      //
 ================ */
 
-footer ul>li>ul>li {
+.footer ul>li>ul>li {
   list-style: none;
   padding: 1em;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--darkgreen_color);
-  color: var(--darkdarkgreen);
+  color: var( --darkdarkgreen);
   transition: .5s;
 }
 
@@ -522,8 +546,9 @@ footer ul>li>ul>li {
 
 #spanY2 a {
   color: var(--corail_color);
-  font-size: 3em;
+  font-size: 3.2em;
   transition: 0.5s all;
+  font-family: 'Pacifico', cursive;
 }
 
 #spanY2:hover a {
@@ -533,6 +558,37 @@ footer ul>li>ul>li {
 #spanY2:hover {
 transform: rotate(5deg);
 }
+
+#cookies {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80vw;
+  flex-flow: column wrap;
+}
+
+aside#cookies h2 {
+  color: var(--corail_color);
+}
+
+aside#cookies p {
+  color: var(--dark_color);
+}
+
+
+button#btn {
+  margin: 5vw 28vw;
+  width: 20vw;
+  padding: 10px 20px;
+  background: #F76C6C;
+  color: #fff;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+
 
 /* ==================
 //   Media queries    //
@@ -609,8 +665,20 @@ transform: rotate(5deg);
 
  /*-----FOOTER-----*/
 
-  footer ul {
+  .footer ul {
     flex-direction: column;
   }
-}
+
+  button#btn {
+    width: 31vw;
+    font-size: 0.7rem;
+  }
+
+  aside#cookies h2 {
+   color: white;
+  }
+
+ }
+
+
         
