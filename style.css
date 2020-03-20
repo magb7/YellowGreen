@@ -257,7 +257,8 @@ nav .ulheader {
 }
 
 #some-projects .carousel-container .carousel-slide img {
-  object-fit: cover;
+  /*object-fit: cover;*/
+  width: 100%;
 }
 
 #some-projects .carousel-container #prevBtn, #nextBtn {
