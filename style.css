@@ -425,9 +425,9 @@ form label {
 //   MEET OUR TEAM    //
 ================ */
 
-#about-us {
-  /*background: linear-gradient(var(--white_color) 5%, var(--corail_color) 70%, var(--white_color));*/
-}
+/*#about-us {
+  background: linear-gradient(var(--white_color) 5%, var(--corail_color) 70%, var(--white_color));
+}*/
 
 .aboutus{
   display:flex;
@@ -625,9 +625,17 @@ button#btn {
   }
 
   .wwd-item {
-    flex-direction: column;
-    flex-flow: wrap;
+    flex-flow: column wrap;
     align-items: center;
+    width: 100vw;
+  }
+
+  .wwd-container:hover > .wwd-item:hover{
+    width: 100vw;
+  }
+  
+  #what-we-do p {
+    width: 50vw;
   }
 
   /*-----OUR VALUES-----*/
