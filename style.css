@@ -120,7 +120,7 @@ nav .ulheader {
 
 .wwd-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   transition: 0.7s;
 }
 
@@ -134,7 +134,7 @@ nav .ulheader {
   flex-flow: column;
   justify-content: center;
   min-height: 250px;
-  width: 32vw;
+  width: 33.3vw;
   text-align: center;
   align-items: center;
   transition: 0.5s;
