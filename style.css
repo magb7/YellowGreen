@@ -553,7 +553,7 @@ transform: rotate(5deg);
   /*-----GENERAL-----*/
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   /*-----HEADER NAV-----*/
@@ -588,7 +588,32 @@ transform: rotate(5deg);
   }
 
   /*-----OUR VALUES-----*/
-  
+#our-values .values-container .right .image-container {
+  width: 100%;
+}
+
+#our-values .values-container .left .image-container {
+  width: 100%;
+}
+
+#our-values .values-container .right .text-container {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background:rgba(253,253,253,.8);
+  border-radius: 3px;
+}
+
+#our-values .values-container .left .text-container {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background:rgba(253,253,253,.8);
+  border-radius: 3px;
+}
+
 
   /*-----OUR PROJECTS-----*/ 
 
