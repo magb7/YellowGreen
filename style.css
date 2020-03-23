@@ -120,14 +120,14 @@ nav .ulheader {
 
 .wwd-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: 0.7s;
 }
 
-/*.wwd-container:hover > .wwd-item{
+.wwd-container:hover > .wwd-item{
   opacity: 0.6;
   transform: scale(0.9);
-}*/
+}
 
 .wwd-item{
   display: flex;
@@ -138,11 +138,6 @@ nav .ulheader {
   text-align: center;
   align-items: center;
   transition: 0.5s;
-}
-
-.wwd-item:hover > .wwd-item {
-  opacity: 0.6;
-  transform: scale(0.9);
 }
 
 .wwd-container:hover > .wwd-item:hover{
