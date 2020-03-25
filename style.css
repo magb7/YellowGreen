@@ -378,56 +378,86 @@ form label {
 /* =============
 //   THEY TRUST US    //
 ================ */
-.container-testimonial{
+.wrapper{
   display: flex;
-  width: 80vw;
-  margin: auto;
+  width: 100vw;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.testimonialBox {
-  width: 100%;
-  height: 250 px;
+.testi{
+  display: flex;
+  padding: 20px 40px;
 }
 
-
-.testimonialBoxIcon {
-  width: 64px;
-  height: 64px;
-  stroke: var(--darkgreen_color);
-  color: var(--darkgreen_color);
+.wrapper .testi .client {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
-.testimonialBoxQuote {
+.say {
+  margin: 60px 0;
   line-height: 1.4;
   margin-bottom: 5px;
+  padding-bottom: 20px;
+  transform: translateY(-200px);
 }
 
-.testimonialBoxQuote mark{
+.say mark{
   background-color: var(--lightgreen_color);
 }
 
-.testimonialBox footer {
-  align-self: flex-end;
-  flex-wrap: wrap;
+
+/* When add class show display the say element */
+
+
+.wrapper .testi .client .profile {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: all 780ms;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.wrapper .testi .client .profile:hover {
+  background:var(--lightgreen_color);
+}
+
+.wrapper .testi .client .profile .img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.wrapper .testi .client .profile .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrapper .testi .client .profile .say svg {
+  width: 64px;
+  height: 64px;
+  color: var(--darkgreen_color);
 }
 
 
-.testimonialBox cite {
-  font-size: 1rem;
-  font-style: italic;
-}
 
-.testimonialBox cite  span {
-    color: var(--dark_color);
-  }
+
+
+
 
 /* =============
 //   MEET OUR TEAM    //
 ================ */
 
-/*#about-us {
-  background: linear-gradient(var(--white_color) 5%, var(--corail_color) 70%, var(--white_color));
-}*/
 
 .aboutus{
   display:flex;
@@ -643,8 +673,6 @@ button#btn {
   /*-----OUR VALUES-----*/
   
 
-  /*-----OUR PROJECTS-----*/ 
-
 
   /*-----FORM-----*/
   #in_form {
@@ -653,7 +681,18 @@ button#btn {
     align-items: center;
   }
 
-  /*-----ABOUT US-----*/
+  /*-----THEY TRUST-----*/ 
+  .wrapper{
+    flex-direction: column;
+  }
+  .wrapper .testi .client .profile {
+    justify-content: flex-start;
+   }
+ 
+  .say{
+    transform: translateY(0);
+  }
+  /*-----MEET OUR TEAL-----*/
  .avatarteam {
    flex-direction: column;
    align-items: center;

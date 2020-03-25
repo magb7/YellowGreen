@@ -1,3 +1,26 @@
+//////THEY TRUST US ////
+
+const profiles = document.getElementsByClassName("profile");
+const say = document.getElementsByClassName("say")
+
+
+profile.addEventListener(onmouseover, () =>{
+        say.style.transform = "translateY(0)";
+        say.style.transition = "all 3s cubic-bezier(1, 0.1, 0, 1.04);}";
+    
+  });
+// Remove class show from parentnode
+
+profiles.forEach(profile => {
+  profile.addEventListener(onmouseleave, event => {
+    event.target.parentNode.classList.remove("show"),()=>{
+        say.style.transform = "translateY(-200)";
+    
+    };
+  });
+});
+
+
 ///////////////
 // FOOTER //
 
