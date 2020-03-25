@@ -383,7 +383,9 @@ form label {
 }
 
 #inner-button {
-  margin-top: 30px;
+  margin: 25vw;
+  padding: 15px;
+  background-color: var(--white_color);
 }
 
 #formulaire p {

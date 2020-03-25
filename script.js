@@ -8,7 +8,11 @@ const confirmButton = document.getElementById('confirm-form-button');
 
 openButton.addEventListener('click', () => {
     confirmButton.style.display = 'initial';
-  })
+  });
+
+closeButton.addEventListener('click', () => {
+    confirmButton.style.display = 'none';
+})
 
 ///////////////
 // FOOTER //
