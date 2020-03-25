@@ -1,3 +1,15 @@
+//////////
+// FORM //
+//////////
+
+const openButton = document.getElementById('send');
+const closeButton = document.getElementById('close-form-button');
+const confirmButton = document.getElementById('confirm-form-button');
+
+openButton.addEventListener('click', () => {
+    confirmButton.style.display = 'initial';
+  })
+
 ///////////////
 // FOOTER //
 

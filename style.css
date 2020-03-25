@@ -357,7 +357,7 @@ form label {
   color: var(--white_color);
 }
 
-#send {
+#send, #close-form-button {
   width: 130px;
   margin: 3vw auto;
   transition: background-color .5s, transform .5s, color .5s;
@@ -369,6 +369,21 @@ form label {
   background-color: var(--corail_color);
   color: var(--white_color);
   transform: scale(1.3);
+}
+
+#confirm-form-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  text-align: center;
+}
+
+#inner-button {
+  margin-top: 30px;
 }
 
 #formulaire p {
