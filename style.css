@@ -684,14 +684,20 @@ button#btn {
   /*-----THEY TRUST-----*/ 
   .wrapper{
     flex-direction: column;
-  }
-  .wrapper .testi .client .profile {
     justify-content: flex-start;
-   }
+  }
  
   .say{
     transform: translateY(0);
   }
+
+  .wrapper .testi .client .profile .img {
+  visibility: hidden;
+  }
+  .wrapper .testi .client .profile:hover {
+    background:none;
+  }
+  
   /*-----MEET OUR TEAL-----*/
  .avatarteam {
    flex-direction: column;
