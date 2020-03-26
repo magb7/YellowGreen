@@ -18,16 +18,16 @@ closeButton.addEventListener('click', () => {
 // FORM SELECT //
 /////////////////
 
-let customSelect, i, j, selElmnt, a, b, c;
+let customSelect, iSelect1, j, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 customSelect = document.getElementsByClassName("custom-select");
-for (i = 0; i < customSelect.length; i++) {
-  selElmnt = customSelect[i].getElementsByTagName("select")[0];
+for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
+  selElmnt = customSelect[iSelect1].getElementsByTagName("select")[0];
   /* For each element, create a new DIV that will act as the selected item: */
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  customSelect[i].appendChild(a);
+  customSelect[iSelect1].appendChild(a);
   /* For each element, create a new DIV that will contain the option list: */
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
@@ -58,7 +58,7 @@ for (i = 0; i < customSelect.length; i++) {
     });
     b.appendChild(c);
   }
-  customSelect[i].appendChild(b);
+  customSelect[iSelect1].appendChild(b);
   a.addEventListener("click", function(e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
