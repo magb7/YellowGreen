@@ -72,15 +72,20 @@ header {
   color: color .5s;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .navbar {
   width: 100%;
   background-color: var(--corail_color);
-  position: sticky;
+  /*position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0;*/
   margin-bottom: 40px;
   padding: 15px 0;
-  z-index: 10;
 }
 
 .titreh1 {
@@ -698,8 +703,6 @@ button#btn {
   /*-----HEADER NAV-----*/
   
   .navbar {
-    /*position: sticky;
-    top: 0;*/
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
     padding: 0;
@@ -734,8 +737,6 @@ button#btn {
   }
   .burger {
     cursor: pointer;
-    /*position: sticky;
-    top: 0;*/
     padding: 15px;
   }
   .sticky {
@@ -751,6 +752,10 @@ button#btn {
     border-radius: 0 60px 60px 0;
     width: 100%;
   }
+
+  /*.liproject {
+    display: none;
+  }*/
 
   .nav-active {
     transform: translateX(0%);
