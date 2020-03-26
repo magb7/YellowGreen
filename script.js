@@ -3,24 +3,29 @@
 ////////////////////
 
 const profiles = document.getElementsByClassName("profile");
-const say = document.getElementsByClassName("say")
+const say = document.getElementsByClassName("say");
 
+const sayAppear = () =>{
+  say.style.transform = "translateY(0)";
+//  say.style.transition = "all 3s cubic-bezier(1, 0.1, 0, 1.04);}";
 
-profile.addEventListener(onmouseover, () =>{
-        say.style.transform = "translateY(0)";
-        say.style.transition = "all 3s cubic-bezier(1, 0.1, 0, 1.04);}";
-    
-  });
+};
+
+console.log(sayAppear)
+
+profiles.addEventListener('mouseenter', () =>{
+  sayAppear();
+});
 //
 
-profiles.forEach(profile => {
-  profile.addEventListener(onmouseleave, event => {
+/*profiles.forEach(profile => {
+  profile.addEventListener('onmouseleave', event => {
     event.target.parentNode.classList.remove("show"),()=>{
         say.style.transform = "translateY(-200)";
     
     };
   });
-});
+});*/
 
 
 ///////////////
@@ -100,11 +105,6 @@ btn.addEventListener(trigger2, function (event) {
   });
 
   
-
-
-// class
-const containerTestimonial = document.getElementsByClassName('container-testimonial');
-const testimonialBox = document.getElementsByClassName('testimonialBox');
 
 
 ///////////////////
