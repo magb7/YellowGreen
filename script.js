@@ -18,19 +18,19 @@ closeButton.addEventListener('click', () => {
 // FORM SELECT //
 /////////////////
 
-let customSelect, iSelect1, jSelect, selElmnt, a, b, cChoice;
+let customSelect, iSelect1, jSelect, selElmnt, aSelected, bItems, cChoice;
 /* Look for any elements with the class "custom-select": */
 customSelect = document.getElementsByClassName("custom-select");
 for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
   selElmnt = customSelect[iSelect1].getElementsByTagName("select")[0];
   /* For each element, create a new DIV that will act as the selected item: */
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  customSelect[iSelect1].appendChild(a);
+  aSelected = document.createElement("DIV");
+  aSelected.setAttribute("class", "select-selected");
+  aSelected.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  customSelect[iSelect1].appendChild(aSelected);
   /* For each element, create a new DIV that will contain the option list: */
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
+  bItems = document.createElement("DIV");
+  bItems.setAttribute("class", "select-items select-hide");
   for (jSelect = 1; jSelect < selElmnt.length; jSelect++) {
     /* For each option in the original select element,
     create a new DIV that will act as an option item: */
@@ -56,10 +56,10 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
         }
         h.click();
     });
-    b.appendChild(cChoice);
+    bItems.appendChild(cChoice);
   }
-  customSelect[iSelect1].appendChild(b);
-  a.addEventListener("click", function(e) {
+  customSelect[iSelect1].appendChild(bItems);
+  aSelected.addEventListener("click", function(e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();
