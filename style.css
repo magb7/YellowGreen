@@ -392,6 +392,46 @@ form label {
   text-align: center;
   margin: 1vw;
 }
+
+/*Select CSS*/
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px; /* pixel perfect */
+  right: 10px;
+  width: 0; /* ??? */
+  height: 0; /* ??? */
+  border: 6px solid transparent;
+  border-color: var(--white_color) transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px; /* pixel perfect */
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: var(--white_color);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
 /* =============
 //   THEY TRUST US    //
 ================ */
