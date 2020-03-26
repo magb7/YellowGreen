@@ -491,9 +491,6 @@ form label {
 }
 
 
-/* When add show display the say element */
-
-
 .wrapper .testi .client .profile {
   display: flex;
   padding: 15px;
@@ -526,10 +523,6 @@ form label {
   height: 64px;
   color: var(--darkgreen_color);
 }
-
-
-
-
 
 
 
@@ -796,7 +789,7 @@ button#btn {
     flex-direction: column;
     justify-content: flex-start;
   }
- 
+
   
   /*-----MEET OUR TEAL-----*/
  .avatarteam {
