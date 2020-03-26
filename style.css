@@ -344,7 +344,7 @@ form label {
 }
 
 .mail_and_phone, form textarea {
-  transition: background-color .5s, color .5s;
+  transition: background-color .3s, color .3s;
 }
 
 .mail_and_phone, form textarea::placeholder {
@@ -360,7 +360,7 @@ form label {
 #send, #close-form-button {
   width: 130px;
   margin: 3vw auto;
-  transition: background-color .5s, transform .5s, color .5s;
+  transition: background-color .3s, transform .3s, color .3s;
   cursor: pointer;
   font-weight: bolder;
 }
@@ -405,38 +405,43 @@ form label {
   display: none; /*hide original SELECT element: */
 }
 
-
+.select-selected {
+  background-color: var(--white_color);
+  border-radius: 0 15px 0 0;
+  font-size: 16px;
+  margin-top: 1vw;
+}
 
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px; /* pixel perfect */
+  top: 55%; /* pixel perfect */
   right: 10px;
   width: 0; /* ??? */
   height: 0; /* ??? */
   border: 6px solid transparent;
-  border-color: var(--white_color) transparent transparent transparent;
+  border-color: var(--dark_color) transparent transparent transparent;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px; /* pixel perfect */
+  border-color: var(--corail_color) transparent transparent transparent;
+  /*top: 45%;*/ /* pixel perfect */
 }
 
 /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
-  color: var(--white_color);
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  color: var(--dark_color);
+  padding: 10px;
+  border: 2px solid var(--darkdarkgreen);
   cursor: pointer;
 }
 
 /* Style items (options): */
 .select-items {
   position: absolute;
+  background-color: var(--white_color);
   top: 100%; /* ??? */
   left: 0;
   right: 0;
@@ -449,7 +454,7 @@ form label {
 }
 
 .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--corail_color);
 }
 
 /* =============
