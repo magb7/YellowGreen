@@ -8,16 +8,16 @@
 // NAV //
 /////////
 
-//const navSlide = () => {
-    //const burger = document.getElementsByClassName('.burger');
-    //const nav = document.getElementsByClassName('.ulheader');
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar');
 
-    //burger.addEventListener('click', () => {
-        //nav.classList.toggle('nav-active');
-    //});
-//}
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+}
 
-//navSlide();
+navSlide();
 
 ///////////////
 // FOOTER //
@@ -25,26 +25,26 @@
 const main = document.getElementById('main');
 const cookies = document.getElementById('cookies');
 const buttonElement = document.getElementById('btn');
-const trigger1 = 'load'; 
- const trigger2 = 'click'; 
+const trigger1 = 'load';
+const trigger2 = 'click';
 
 
 console.log(cookies);
 
-function bluredBody (filter) {
+function bluredBody(filter) {
     main.style.filter = filter;
 
 
 };
 
 
-function acceptCookie (display,position,top,left,width) {
+function acceptCookie(display, position, top, left, width) {
     cookies.style.display = display;
     cookies.style.position = position;
     cookies.style.top = top;
     cookies.style.left = left;
     cookies.style.width = width;
-      
+
 };
 
 
@@ -93,9 +93,9 @@ nextBtn.addEventListener('click', () => {
 btn.addEventListener(trigger2, function (event) {
     bluredBody('blur(0px)');
     acceptCookie('none');
-  });
+});
 
-  
+
 
 
 // class
