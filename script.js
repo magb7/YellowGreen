@@ -39,13 +39,13 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
     cChoice.addEventListener("click", function(e) {
         /* When an item is clicked, update the original select box,
         and the selected item: */
-        let y, iSelect2, k, sWhich, h;
+        let y, iSelect2, k, sWhich, hOption;
         sWhich = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        h = this.parentNode.previousSibling;
+        hOption = this.parentNode.previousSibling;
         for (iSelect2 = 0; iSelect2 < sWhich.length; iSelect2++) {
           if (sWhich.options[iSelect2].innerHTML == this.innerHTML) {
             sWhich.selectedIndex = iSelect2;
-            h.innerHTML = this.innerHTML;
+            hOption.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
             for (k = 0; k < y.length; k++) {
               y[k].removeAttribute("class");
@@ -54,7 +54,7 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
             break;
           }
         }
-        h.click();
+        hOption.click();
     });
     bItems.appendChild(cChoice);
   }
