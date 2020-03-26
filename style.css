@@ -460,14 +460,16 @@ form label {
 }
 
 #inner-button {
-  margin: 25vw;
-  padding: 15px;
+  margin: 15vw 25vw;
+  padding: 20px;
   background-color: var(--white_color);
+  border-radius: 15px;
 }
 
-#formulaire p {
-  text-align: center;
-  margin: 1vw;
+#close-form-button:hover {
+  background-color: var(--corail_color);
+  color: var(--white_color);
+  transform: scale(1.3);
 }
 
 /*============

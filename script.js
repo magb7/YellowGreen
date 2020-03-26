@@ -7,7 +7,7 @@ const closeButton = document.getElementById('close-form-button');
 const confirmButton = document.getElementById('confirm-form-button');
 
 openButton.addEventListener('click', () => {
-    confirmButton.style.display = 'initial';
+    confirmButton.style.display = 'initial'; /*contents*/
   });
 
 closeButton.addEventListener('click', () => {
