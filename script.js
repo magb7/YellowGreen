@@ -18,7 +18,7 @@ closeButton.addEventListener('click', () => {
 // FORM SELECT //
 /////////////////
 
-let customSelect, iSelect1, jSelect, selElmnt, a, b, c;
+let customSelect, iSelect1, jSelect, selElmnt, a, b, cChoice;
 /* Look for any elements with the class "custom-select": */
 customSelect = document.getElementsByClassName("custom-select");
 for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
@@ -34,17 +34,17 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
   for (jSelect = 1; jSelect < selElmnt.length; jSelect++) {
     /* For each option in the original select element,
     create a new DIV that will act as an option item: */
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[jSelect].innerHTML;
-    c.addEventListener("click", function(e) {
+    cChoice = document.createElement("DIV");
+    cChoice.innerHTML = selElmnt.options[jSelect].innerHTML;
+    cChoice.addEventListener("click", function(e) {
         /* When an item is clicked, update the original select box,
         and the selected item: */
-        let y, i, k, s, h;
+        let y, iSelect2, k, s, h;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         h = this.parentNode.previousSibling;
-        for (i = 0; i < s.length; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
+        for (iSelect2 = 0; iSelect2 < s.length; iSelect2++) {
+          if (s.options[iSelect2].innerHTML == this.innerHTML) {
+            s.selectedIndex = iSelect2;
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
             for (k = 0; k < y.length; k++) {
@@ -56,7 +56,7 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
         }
         h.click();
     });
-    b.appendChild(c);
+    b.appendChild(cChoice);
   }
   customSelect[iSelect1].appendChild(b);
   a.addEventListener("click", function(e) {
