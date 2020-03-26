@@ -1,33 +1,3 @@
-/////////////////////
-///THEY TRUST US ///
-////////////////////
-
-const profiles = document.getElementsByClassName("profile");
-const say = document.getElementsByClassName("say");
-
-const sayAppear = () =>{
-  say.style.transform = "translateY(0)";
-//  say.style.transition = "all 3s cubic-bezier(1, 0.1, 0, 1.04);}";
-
-};
-
-console.log(sayAppear)
-
-profiles.addEventListener('mouseenter', () =>{
-  sayAppear();
-});
-//
-
-/*profiles.forEach(profile => {
-  profile.addEventListener('onmouseleave', event => {
-    event.target.parentNode.classList.remove("show"),()=>{
-        say.style.transform = "translateY(-200)";
-    
-    };
-  });
-});*/
-
-
 ///////////////
 // FOOTER //
 
@@ -107,11 +77,36 @@ btn.addEventListener(trigger2, function (event) {
   
 
 
+
+
+
 ///////////////////
 // THEY TRUST US //
 ///////////////////
 
+const profiles = document.getElementsByClassName("client");
 
+const sayAppear = (profile) =>{
+  const say = profile.querySelector('.say');
+  say.style.transform = "translateY(0)";
+};
+
+for (let i =0; i < profiles.length; i++){
+  profiles[i].addEventListener('mouseenter', () => {
+    sayAppear(profiles[i]);
+  });
+};
+
+const sayDisappear = (profile) =>{
+  const say = profile.querySelector('.say');
+  say.style.transform = "translateY(-200px)";
+};
+
+for (let i =0; i < profiles.length; i++){
+  profiles[i].addEventListener('mouseleave', () => {
+    sayDisappear(profiles[i]);
+  });
+};
 
 //buttonElement.addEventListener('click', acceptCookie('none','absolute','30%','10%','80vw'));
 
