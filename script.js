@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ////////////
 // HEADER //
 ////////////
@@ -20,10 +19,8 @@
 
 //navSlide();
 
-=======
 ///////////////
 // FOOTER //
->>>>>>> 0cde0385d9908bfbb9511885914a0a382d2bc881
 
 const main = document.getElementById('main');
 const cookies = document.getElementById('cookies');
