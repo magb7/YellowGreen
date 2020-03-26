@@ -393,7 +393,9 @@ form label {
   margin: 1vw;
 }
 
-/*Select CSS*/
+/*============
+/ Select CSS /
+============*/
 
 .custom-select {
   position: relative;
@@ -430,6 +432,24 @@ form label {
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  top: 100%; /* ??? */
+  left: 0;
+  right: 0;
+  z-index: 99; /* ??? */
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* =============
