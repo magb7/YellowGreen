@@ -18,37 +18,37 @@ closeButton.addEventListener('click', () => {
 // FORM SELECT //
 /////////////////
 
-let customSelect, iSelect1, jSelect, selElmnt, aSelected, bItems, cChoice;
+let customSelect, iCounter1, jCounter, selElmnt, aSelected, bItems, cChoice;
 /* Look for any elements with the class "custom-select": */
 customSelect = document.getElementsByClassName("custom-select");
-for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
-  selElmnt = customSelect[iSelect1].getElementsByTagName("select")[0];
+for (iCounter1 = 0; iCounter1 < customSelect.length; iCounter1++) {
+  selElmnt = customSelect[iCounter1].getElementsByTagName("select")[0];
   /* For each element, create a new DIV that will act as the selected item: */
   aSelected = document.createElement("DIV");
   aSelected.setAttribute("class", "select-selected");
   aSelected.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  customSelect[iSelect1].appendChild(aSelected);
+  customSelect[iCounter1].appendChild(aSelected);
   /* For each element, create a new DIV that will contain the option list: */
   bItems = document.createElement("DIV");
   bItems.setAttribute("class", "select-items select-hide");
-  for (jSelect = 1; jSelect < selElmnt.length; jSelect++) {
+  for (jCounter = 1; jCounter < selElmnt.length; jCounter++) {
     /* For each option in the original select element,
     create a new DIV that will act as an option item: */
     cChoice = document.createElement("DIV");
-    cChoice.innerHTML = selElmnt.options[jSelect].innerHTML;
+    cChoice.innerHTML = selElmnt.options[jCounter].innerHTML;
     cChoice.addEventListener("click", function(e) {
         /* When an item is clicked, update the original select box,
         and the selected item: */
-        let y, iSelect2, k, sWhich, hOption;
+        let y, iCounter2, kCounter, sWhich, hOption;
         sWhich = this.parentNode.parentNode.getElementsByTagName("select")[0];
         hOption = this.parentNode.previousSibling;
-        for (iSelect2 = 0; iSelect2 < sWhich.length; iSelect2++) {
-          if (sWhich.options[iSelect2].innerHTML == this.innerHTML) {
-            sWhich.selectedIndex = iSelect2;
+        for (iCounter2 = 0; iCounter2 < sWhich.length; iCounter2++) {
+          if (sWhich.options[iCounter2].innerHTML == this.innerHTML) {
+            sWhich.selectedIndex = iCounter2;
             hOption.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
-            for (k = 0; k < y.length; k++) {
-              y[k].removeAttribute("class");
+            for (kCounter = 0; kCounter < y.length; kCounter++) {
+              y[kCounter].removeAttribute("class");
             }
             this.setAttribute("class", "same-as-selected");
             break;
@@ -58,7 +58,7 @@ for (iSelect1 = 0; iSelect1 < customSelect.length; iSelect1++) {
     });
     bItems.appendChild(cChoice);
   }
-  customSelect[iSelect1].appendChild(bItems);
+  customSelect[iCounter1].appendChild(bItems);
   aSelected.addEventListener("click", function(e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
