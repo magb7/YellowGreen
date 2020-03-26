@@ -39,16 +39,16 @@ for (iCounter1 = 0; iCounter1 < customSelect.length; iCounter1++) {
     cChoice.addEventListener("click", function(e) {
         /* When an item is clicked, update the original select box,
         and the selected item: */
-        let y, iCounter2, kCounter, sWhich, hOption;
+        let ySame, iCounter2, kCounter, sWhich, hOption;
         sWhich = this.parentNode.parentNode.getElementsByTagName("select")[0];
         hOption = this.parentNode.previousSibling;
         for (iCounter2 = 0; iCounter2 < sWhich.length; iCounter2++) {
           if (sWhich.options[iCounter2].innerHTML == this.innerHTML) {
             sWhich.selectedIndex = iCounter2;
             hOption.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            for (kCounter = 0; kCounter < y.length; kCounter++) {
-              y[kCounter].removeAttribute("class");
+            ySame = this.parentNode.getElementsByClassName("same-as-selected");
+            for (kCounter = 0; kCounter < ySame.length; kCounter++) {
+                ySame[kCounter].removeAttribute("class");
             }
             this.setAttribute("class", "same-as-selected");
             break;
@@ -72,19 +72,19 @@ for (iCounter1 = 0; iCounter1 < customSelect.length; iCounter1++) {
 function closeAllSelect(elmnt) {
   /* A function that will close all select boxes in the document,
   except the current select box: */
-  let x, y, i, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  for (i = 0; i < y.length; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
+  let xItems, ySelected, iCounter3, arrNo = [];
+  xItems = document.getElementsByClassName("select-items");
+  ySelected = document.getElementsByClassName("select-selected");
+  for (iCounter3 = 0; iCounter3 < ySelected.length; iCounter3++) {
+    if (elmnt == ySelected[iCounter3]) {
+      arrNo.push(iCounter3)
     } else {
-      y[i].classList.remove("select-arrow-active");
+        ySelected[iCounter3].classList.remove("select-arrow-active");
     }
   }
-  for (i = 0; i < x.length; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
+  for (iCounter3 = 0; iCounter3 < xItems.length; iCounter3++) {
+    if (arrNo.indexOf(iCounter3)) {
+        xItems[iCounter3].classList.add("select-hide");
     }
   }
 }
