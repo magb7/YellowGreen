@@ -903,9 +903,9 @@ button.btn {
     font-size: 0.9rem;
   }
 
-  /*.liproject {
+  .liproject {
     display: none;
-  }*/
+  }
 
   .nav-active {
     transform: translateX(0%);
