@@ -49,7 +49,45 @@ function acceptCookie (display,position,top,left,width) {
 
 
 main.addEventListener(trigger1, bluredBody('blur(8px)'));
-cookies.addEventListener(trigger1, acceptCookie('block','absolute','30%','10%','80vw'));
+cookies.addEventListener(trigger1, acceptCookie('block', 'absolute', '30%', '10%', '80vw'));
+
+//////////////////
+// SLIDESHOW ///
+////////////////
+
+
+const carouselSlides = document.querySelectorAll('.slide-item');
+
+let currentSlide = 0;
+
+
+const nextSlide = () => {
+    console.log('next');
+    goToSlide(currentSlide + 1);
+};
+
+const previousSlide = () => {
+    console.log('previous');
+    goToSlide(currentSlide - 1);
+};
+
+const goToSlide = (n) => {
+    carouselSlides[currentSlide].className = 'slide-item';
+    currentSlide = (n + carouselSlides.length) % carouselSlides.length;
+    carouselSlides[currentSlide].className = 'slide-item showing';
+};
+
+const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector('#prevBtn');
+
+prevBtn.addEventListener('click', () => {
+    previousSlide();
+});
+
+nextBtn.addEventListener('click', () => {
+    nextSlide();
+});
+
 
 
 btn.addEventListener(trigger2, function (event) {
@@ -59,6 +97,15 @@ btn.addEventListener(trigger2, function (event) {
 
   
 
+
+// class
+const containerTestimonial = document.getElementsByClassName('container-testimonial');
+const testimonialBox = document.getElementsByClassName('testimonialBox');
+
+
+///////////////////
+// THEY TRUST US //
+///////////////////
 
 
 
