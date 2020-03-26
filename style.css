@@ -601,7 +601,7 @@ form textarea:focus {
 
 .footer ul>li>ul>li {
   list-style: none;
-  padding: 1em;
+  padding: 1.5em;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--darkgreen_color);
   color: var(--darkdarkgreen);
@@ -621,7 +621,7 @@ form textarea:focus {
 .footer>a {
   flex: 1;
   padding: 5% 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .footer,
@@ -636,10 +636,20 @@ form textarea:focus {
   align-items: center;
 }
 
-.footer ul>li>ul>li:hover {
-  color: var(--corail_color);
-  background: rgba(255, 255, 255, 0.6);
+.footer ul>li>ul>li:hover,
+button.btn:hover
+{ 
+
+  background:rgba(255, 255, 255, 0.6);
   border-radius: 5px;
+  box-shadow: 0 0 3px rgb(54, 48, 48);
+  color: coral;
+
+}
+
+button.btn:hover {
+  font-weight: bold;
+
 }
 
 #spanY2 a {
@@ -651,23 +661,48 @@ form textarea:focus {
 
 #spanY2:hover a {
   color: var(--darkgreen_color);
+
 }
 
 #spanY2:hover {
-  transform: rotate(5deg);
+transform: rotate(5deg);
+background: none;
+box-shadow: none;
 }
 
 #cookies {
   display: none;
   position: absolute;
   top: 30%;
-  left: 10%;
   width: 80vw;
+  max-width: 1200px;
   flex-flow: column wrap;
+
+
+min-height: 0 ;
+
+
+right: 0 ;
+
+bottom: 10px ;
+
+margin: 0 auto ;
+}
+
+#cookies p {
+    font-size: 1rem;;
+    background:rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#cookies h2 {
+  -webkit-text-stroke: .3px black;
 }
 
 aside#cookies h2 {
   color: var(--corail_color);
+  margin-bottom: 5vh;;
 }
 
 aside#cookies p {
@@ -675,15 +710,20 @@ aside#cookies p {
 }
 
 
-button#btn {
-  margin: 5vw 28vw;
-  width: 20vw;
+button.btn {
+  margin: 2vw auto;
+  width: 30vw;
+  max-width: 420px;;
   padding: 10px 20px;
   background: #F76C6C;
   color: #fff;
   border: transparent;
   border-radius: 4px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  transition: .5s;
+  box-shadow: 0 0 3px rgb(54, 48, 48);
+  display: block;
+  max-width: 600px;
 }
 
 
@@ -851,7 +891,11 @@ button#btn {
   }
 
   aside#cookies h2 {
-    color: white;
-  }
+   font-size: 3rem;
 
+ }
+
+ #cookies {
+   margin: 0 12vw;
+ }
 }
