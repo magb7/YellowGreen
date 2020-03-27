@@ -42,3 +42,18 @@ pour V1.1
 - styliser le select de « form » avec JS
 - p inline pour « about us »
 - menu burger
+
+------------------------
+
+compte-rendu V1.1
+
+- réorganisation des sections
+- ajouts mineurs "header"
+- "nav" devient menu burger en mode "petit écran"
+- "what we do" dynamique
+- "some projects" avec slideshow JS
+- "form" amélioré, select JS, button JS
+- section "they trust us" ajoutée
+- changements mineurs "meet our team"
+- ajouts mineurs "footer"
+- ajouts d'un pop-up "cookie"
