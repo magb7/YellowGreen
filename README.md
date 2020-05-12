@@ -1,26 +1,20 @@
 # YellowGreen
 
-Roxane Drelon
-Yann Dubois
-Valentin Vantroys
-Maxime Rawinski
-Liora Laulier
-Margaux Bédu
+This is the first project carried out during training at the Wild Code School. 
 
-« Agence de comm’ centré sur le développement durable et mettre en avant l’aspect « green » de l’entreprise. »
-09/03/2020 → 13/03/2020
+## Developer team 
 
-- header (MUST HAVE)
-- nav (MUST HAVE)
-- galerie / valeurs
-- what we do (MUST HAVE)
-- formulaire (MUST HAVE)
-- they trust us
-- about us
-- footer
+- Roxane Drelon
+- Yann Dubois
+- Valentin Vantroys
+- Maxime Rawinski
+- Liora Laulier
+- Margaux Bédu
 
+## Time spent
 
-1 – wireframe
-2 – header / nav HTML
-3 – formulaire HTML
+The project was conducted from 9 to 13 March.
 
+## Production (on Netlify)
+
+You can see the result [here](https://yellowgreen.netlify.app/)
