@@ -4,12 +4,12 @@ This is the first project carried out during training at the Wild Code School.
 
 ## Developer team 
 
-- Roxane Drelon
-- Yann Dubois
-- Valentin Vantroys
-- Maxime Rawinski
-- Liora Laulier
-- Margaux Bédu
+
+* **Liora Laulier** _alias_ [@llaulier](https://github.com/llaulier)
+* **Margaux Bédu** _alias_ [@magb7](https://github.com/magb7)
+* **Maxime Rawinski** _alias_ [@MaximePikss](https://github.com/MaximePikss)
+* **Roxane Drelon** _alias_ [@RoxaneDrelon](https://github.com/RoxaneDrelon)
+* **Valentin Vantroys** _alias_ [@ValentinV3](https://github.com/ValentinV3)
 
 ## Time spent
 
